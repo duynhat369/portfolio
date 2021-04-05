@@ -1,0 +1,17 @@
+$primary-color: #bb465c;
+$brown-color: #7c3939;
+$white-color: #ffffff;
+$button-primary:#bb465c;
+
+@mixin flex(
+  $flow: column,
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-flow: $flow;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
