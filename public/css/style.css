@@ -19,12 +19,16 @@ h3,
 .btn-style {
   margin: 1rem 0;
   padding: 0.5rem 1rem;
-  background-color: #bb465c;
+  background-color: #807760;
   color: #ffffff;
 }
 
+q {
+  font-style: italic;
+}
+
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h1 {
@@ -33,6 +37,10 @@ h1 {
 
 h3 {
   font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.2;
 }
 
 small {
@@ -44,12 +52,15 @@ h3,
 h5,
 small,
 li a,
-p {
+p,
+span {
   color: #ffffff;
 }
 
 .page {
-  background-color: rgba(56, 55, 55, 0.9);
+  background-color: #2DB38B;
+  /*for browser do not support gradient color*/
+  background-image: linear-gradient(to right, #2DB38B, #8CE9E7);
 }
 .page-column-information {
   padding: 0;
@@ -58,7 +69,7 @@ p {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #bb465c;
+  background-color: #E3BB4D;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -114,14 +125,14 @@ p {
 }
 .page .navigator-item-profiles li a:hover {
   background-color: #ffffff;
-  color: #bb465c;
+  color: #E3BB4D;
 }
 .page .navigator-item-profiles li:first-child {
   border-top: 2px solid #ffffff;
 }
 .page .navigator-link {
   width: 100%;
-  border-bottom: 1px solid #2c2b2b;
+  border-bottom: 1px solid #807760;
 }
 .page .navigator-link-social {
   display: flex;
@@ -140,14 +151,14 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #7c3939;
+  background-color: #E69C50;
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
   transition: 0.8s ease;
 }
 .page .navigator-link-social li a:hover {
-  color: #bb465c;
+  color: #E69C50;
   background-color: #ffffff;
 }
 .page .navigator-copyright {
@@ -170,24 +181,20 @@ p {
 }
 .page .about-title-text {
   letter-spacing: 2px;
+  position: relative;
+}
+.page .about-title-text::after {
+  border-bottom: 1px solid #ffffff;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(50%, 100%);
 }
 .page .about-title-des {
   text-align: center;
-  line-height: 1.3;
-  letter-spacing: 1px;
-}
-.page .about .about-content1 {
-  border-bottom: 1px solid #807a7a;
-}
-.page .about .about-content1 .row {
-  display: flex;
-  align-items: center;
-}
-.page .about .about-content1-image img {
-  width: 100%;
-  border-radius: 0.3rem;
-}
-.page .about .about-content1-text {
   line-height: 1.3;
   letter-spacing: 1px;
 }
@@ -195,12 +202,19 @@ p {
   display: flex;
   align-items: center;
 }
+.page .about .about-content .row .height500px {
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 .page .about .about-content-image img {
   width: 100%;
   border-radius: 0.3rem;
 }
-.page .about .about-content-text {
-  line-height: 1.3;
+.page .about .about-content-des {
   letter-spacing: 1px;
 }
 .page .skills {
@@ -215,14 +229,28 @@ p {
 }
 .page .skills-heading-text {
   letter-spacing: 2px;
+  position: relative;
+}
+.page .skills-heading-text::after {
+  border-bottom: 1px solid #ffffff;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(50%, 100%);
 }
 .page .skills-heading-des {
   text-align: center;
   line-height: 1.3;
   letter-spacing: 1px;
 }
+.page .skills .pos-relative {
+  left: 15px;
+}
 .page .skills .skill-htmt {
-  background-color: #997d03;
+  background-color: #c29ba4;
   transition: 0.2s ease-in-out;
   position: absolute;
   width: 50%;
@@ -231,7 +259,7 @@ p {
   left: 0;
 }
 .page .skills .skill-htmt-icon {
-  background-image: url("../../public/image/white-icon.png");
+  background-image: url("../../public/image/html-tag-iocn.png");
   width: 70px;
   height: 70px;
   background-repeat: no-repeat;
@@ -259,7 +287,7 @@ p {
   display: none;
 }
 .page .skills .skill-javascript {
-  background-color: #01463c;
+  background-color: #E3BB4D;
   transition: 0.2s ease-in-out;
   position: absolute;
   width: 50%;
@@ -296,7 +324,7 @@ p {
   display: none;
 }
 .page .skills .skill-nodejs {
-  background-color: #2e2d2e;
+  background-color: #E69C50;
   transition: 0.2s ease-in-out;
   position: absolute;
   width: 50%;
@@ -333,7 +361,7 @@ p {
   display: none;
 }
 .page .skills .skill-reactjs {
-  background-color: #13274b;
+  background-color: #2DB38B;
   transition: 0.2s ease-in-out;
   position: absolute;
   width: 50%;
@@ -368,6 +396,18 @@ p {
 }
 .page .skills .skill-reactjs:hover .skill-text {
   display: none;
+}
+.page .contact-content-text {
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.page .contact-content-text ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.page .contact-content-text ul li svg {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

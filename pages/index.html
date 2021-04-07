@@ -10,11 +10,14 @@
   <link rel="stylesheet" href="/public/css/reset.css">
   <link rel="stylesheet" href="/public/css/style.css">
   <script src="https://kit.fontawesome.com/dc7bf0970f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap" rel="stylesheet">
   <title>Portfolio</title>
 </head>
 
 <body>
-  <div class="page">
+  <div class="page pos-relative">
     <div class="container">
       <div class="row">
         <!-- Start navigator column -->
@@ -50,56 +53,38 @@
         </div>
         <!-- End navigator column -->
 
-        <div class="col-sm-12 col-md-8 col-lg-9">
+        <div class="col-sm-12 col-md-8 col-lg-9 pl-5 page-column-information">
           <!--Start about me -->
-          <div class="about m-5 pb-5" id="about">
+          <div class="about my-5 pb-5" id="about">
             <div class="row">
               <div class="col">
-                <div class="about-title my-2 py-2 mr-5 pl-5">
-                  <h1 class="about-title-text my-2">About Me</h1>
-                  <p class="about-title-des my-2">Programming is not only a job, it is my passion. I always wanted to
-                    learn
-                    about new technology because that kept me motivated to pursue this job.</p>
+                <div class="about-title my-2 px-5">
+                  <h1 class="about-title-text py-2 my-2">About Me</h1>
+                  <q class="about-title-des py-2 my-2">&#x22Programming is not only a job, it is my passion. Like
+                    everyone
+                    else, living with purpose and passion. And I'm passionate about programming that is my purpose in
+                    LIFE.&#x22</q>
                 </div>
               </div>
             </div>
 
-            <div class="about-content1 pb-5 pt-5">
-              <div class="row justify-content-center">
+            <div class="about-content">
+              <div class="row justify-content-center my-5">
                 <div class="col-lg-6">
                   <div class="about-content-image">
-                    <img src="../public/image/work.jpg" alt="img about me">
+                    <img src="../public/image/life2.jpeg" alt="img about me">
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="about-content-heading">
-                    <h3 class="heading bold-text mb-2 mt-2">In the work and deadlines</h3>
-                    <div class="about-content-text">
-                      <p> Working hard for work, working for passion does not matter money.
-                        Always complete work on time, without delay</p>
-                    </div>
-                    <div class="btn btn-style">Hover me</div>
+                <div class="col-lg-6 height500px">
+                  <div class="about-content-heading my-2 py-2">
+                    <h3 class="heading bold-text">Introduce myself</h3>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="about-content pb-5 pt-5">
-              <div class="row justify-content-center">
-                <div class="col-lg-6 order-2">
-                  <div class="about-content-image">
-                    <img src="../public/image/life.jpeg" alt="img about me">
-                  </div>
-                </div>
-                <div class="col-lg-6 order-1">
-                  <div class="about-content-heading">
-                    <h3 class="heading bold-text mb-2 mt-2">In life and community</h3>
-                    <div class="about-content-text">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Dignissimos, error! Consequuntur illo ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                        quisquam dolore odio quas alias aperiam dolor voluptas voluptate laudantium expedita!</p>
-                    </div>
-                    <div class="btn btn-style">Hover me</div>
+                  <div class="about-content-des my-2 py-2">
+                    <p class="des">Hi, I am a cheerful and friendly person who always helps people if I can do that.
+                      Exploit me because I can exploit<br> <br>Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Voluptates debitis nostrum
+                      deleniti, tempora et temporibus hic sed nemo dignissimos aperiam atque magni aliquid unde officia
+                      officiis eveniet, aliquam, magnam rerum?</p>
                   </div>
                 </div>
               </div>
@@ -108,18 +93,18 @@
           <!--End about me -->
 
           <!--Start skills -->
-          <div class="skills m-5 pb-5" id="skills">
+          <div class="skills my-5 pb-5" id="skills">
             <div class="row">
               <div class="col-lg-12">
-                <div class="skills-heading my-2 py-2 mr-5 pl-5">
-                  <h1 class="skills-heading-text my-2">What I'm good at?</h1>
-                  <p class="skills-heading-des my-2">Programming is not only a job, it is my passion. I always wanted to
-                    learn
-                    about new technology because that kept me motivated to pursue this job.</p>
+                <div class="skills-heading my-2 py-2 px-5">
+                  <h1 class="skills-heading-text my-2 py-2">What I'm good at?</h1>
+                  <p class="skills-heading-des my-2 py-2">Programming is not only a job, it is my passion. I always
+                    wanted to learn about new technology because that kept me motivated to pursue this job.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="row pos-relative mt-5 mb-5 ml-1" style="height: 640px; width: 100%;">
+            <div class="row pos-relative my-5" style="height: 640px; width: 100%;">
               <div class="skill-htmt p-5">
                 <div class="skill-htmt-icon mb-4"></div>
                 <div class="skill-htmt-heading">
@@ -270,11 +255,76 @@
           </div>
           <!--End skills -->
 
-          <div class="projects m-5 pb-5" id="projects">
+          <!--Start projects -->
+          <div class="projects my-5 pb-5" id="projects">
             <div class="row">
               <div class="col"></div>
             </div>
           </div>
+          <!--End projects -->
+
+          <!-- Start contact -->
+          <div class="contact my5 pb-5" id="contact">
+            <div class="row">
+              <div class="col">
+                <div class="contact-content-text">
+                  <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="30"
+                        height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg>
+
+                      <span>Full Name: Nguyen Duy Nhat</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="30"
+                        height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg>
+
+                      <span>Birthday: 05/02/2000</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="30"
+                        height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg>
+
+                      <span>Phone Number: +84 815 567 787</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="30"
+                        height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg>
+
+                      <span>Email: duynhat719@gmail.com</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="30"
+                        height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg>
+
+                      <span>Address: District 5, HCM City</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End contact -->
         </div>
       </div>
     </div>
