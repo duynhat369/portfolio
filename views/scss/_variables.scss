@@ -1,11 +1,9 @@
-$primary-color: #E3BB4D;
-$second-color: #8CE9E7;
-$third-color: #E69C50;
-$border-color: #807760;
-$background-color: #2DB38B;
+$primary-color: #CC635B;
+$second-color: #CC635B;
+$third-color: #9c403a;
+$border-color: #8C665E;
 $extra-color: #c29ba4;
 $white-color: #ffffff;
-$button-primary: $border-color;
 
 @mixin flex(
   $flow: column,

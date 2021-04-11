@@ -12,15 +12,28 @@ h3,
   font-weight: 700;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 4px #8C665E;
+}
+
 .pos-relative {
   position: relative;
+}
+
+.magrin-bottop-15px {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .btn-style {
   margin: 1rem 0;
   padding: 0.5rem 1rem;
-  background-color: #807760;
+  background-color: #CC635B;
   color: #ffffff;
+  transition: 0.8s ease;
+}
+.btn-style:hover {
+  opacity: 0.8;
 }
 
 q {
@@ -49,19 +62,16 @@ small {
 
 h1,
 h3,
-h5,
+h5 {
+  color: #000000;
+}
+
 small,
 li a,
-p,
 span {
   color: #ffffff;
 }
 
-.page {
-  background-color: #2DB38B;
-  /*for browser do not support gradient color*/
-  background-image: linear-gradient(to right, #2DB38B, #8CE9E7);
-}
 .page-column-information {
   padding: 0;
 }
@@ -69,7 +79,7 @@ span {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #E3BB4D;
+  background-color: #CC635B;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -97,13 +107,17 @@ span {
   justify-content: space-around;
   flex-wrap: nowrap;
 }
+.page .navigator-author h3,
+.page .navigator-author h5 {
+  color: #ffffff;
+}
 .page .navigator-author-position {
   font-size: 0.8rem;
 }
-.page .navigator-item {
+.page .navigator-items {
   width: 100%;
 }
-.page .navigator-item-profiles li {
+.page .navigator-items-profiles li {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -113,7 +127,8 @@ span {
   height: 100%;
   font-size: 1rem;
 }
-.page .navigator-item-profiles li a {
+.page .navigator-items-profiles li a {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -123,16 +138,42 @@ span {
   transition: 0.8s ease;
   border-bottom: 2px solid #ffffff;
 }
-.page .navigator-item-profiles li a:hover {
+.page .navigator-items-profiles li a:hover {
   background-color: #ffffff;
-  color: #E3BB4D;
+  color: #CC635B;
+  border-right: 1px solid #CC635B;
+  border-left: 1px solid #CC635B;
+  padding-left: 1rem;
 }
-.page .navigator-item-profiles li:first-child {
+.page .navigator-items-profiles li a:hover::before {
+  content: " >";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: #CC635B;
+}
+.page .navigator-items-profiles li .active {
+  background-color: #ffffff;
+  color: #CC635B;
+  border-right: 2px solid #CC635B;
+  border-left: 2px solid #CC635B;
+  padding-left: 1rem;
+}
+.page .navigator-items-profiles li .active::before {
+  content: " >";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: #CC635B;
+}
+.page .navigator-items-profiles li:first-child {
   border-top: 2px solid #ffffff;
 }
 .page .navigator-link {
   width: 100%;
-  border-bottom: 1px solid #807760;
+  border-bottom: 1px solid #8C665E;
 }
 .page .navigator-link-social {
   display: flex;
@@ -151,15 +192,16 @@ span {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #E69C50;
+  background-color: #9c403a;
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
   transition: 0.8s ease;
 }
 .page .navigator-link-social li a:hover {
-  color: #E69C50;
+  color: #9c403a;
   background-color: #ffffff;
+  padding-bottom: 0.5rem;
 }
 .page .navigator-copyright {
   width: 100%;
@@ -170,7 +212,7 @@ span {
   flex-wrap: nowrap;
 }
 .page .about {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #CC635B;
 }
 .page .about-title {
   display: flex;
@@ -181,17 +223,16 @@ span {
 }
 .page .about-title-text {
   letter-spacing: 2px;
-  position: relative;
 }
 .page .about-title-text::after {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #CC635B;
   content: "";
   position: absolute;
   width: 50%;
   height: 0;
   bottom: 0;
   left: 0;
-  transform: translate(50%, 100%);
+  transform: translate(50%, 50%);
 }
 .page .about-title-des {
   text-align: center;
@@ -202,14 +243,6 @@ span {
   display: flex;
   align-items: center;
 }
-.page .about .about-content .row .height500px {
-  height: 500px;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
 .page .about .about-content-image img {
   width: 100%;
   border-radius: 0.3rem;
@@ -218,7 +251,7 @@ span {
   letter-spacing: 1px;
 }
 .page .skills {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #CC635B;
 }
 .page .skills-heading {
   display: flex;
@@ -229,71 +262,45 @@ span {
 }
 .page .skills-heading-text {
   letter-spacing: 2px;
-  position: relative;
 }
 .page .skills-heading-text::after {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #CC635B;
   content: "";
   position: absolute;
   width: 50%;
   height: 0;
   bottom: 0;
   left: 0;
-  transform: translate(50%, 100%);
+  transform: translate(50%, 50%);
 }
 .page .skills-heading-des {
   text-align: center;
   line-height: 1.3;
   letter-spacing: 1px;
 }
-.page .skills .pos-relative {
-  left: 15px;
-}
-.page .skills .skill-htmt {
+.page .skills .skill-html {
   background-color: #c29ba4;
   transition: 0.2s ease-in-out;
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 0;
-  left: 0;
 }
-.page .skills .skill-htmt-icon {
+.page .skills .skill-html-icon {
   background-image: url("../../public/image/html-tag-iocn.png");
   width: 70px;
   height: 70px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.page .skills .skill-htmt-heading .skill-title {
+.page .skills .skill-html-heading .skill-title {
   letter-spacing: 2px;
 }
-.page .skills .skill-htmt-heading .skill-text {
+.page .skills .skill-html-heading .skill-text {
   letter-spacing: 1px;
 }
-.page .skills .skill-htmt .skill-text-hover {
+.page .skills .skill-html-heading .skill-text-hover {
   letter-spacing: 1px;
-  display: none;
-}
-.page .skills .skill-htmt:hover {
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-}
-.page .skills .skill-htmt:hover .skill-text-hover {
-  display: block;
-}
-.page .skills .skill-htmt:hover .skill-text {
-  display: none;
 }
 .page .skills .skill-javascript {
-  background-color: #E3BB4D;
+  background-color: #CC635B;
   transition: 0.2s ease-in-out;
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 0;
-  right: 0;
 }
 .page .skills .skill-javascript-icon {
   background-image: url("../../public/image/white-icon.png");
@@ -308,32 +315,15 @@ span {
 .page .skills .skill-javascript-heading .skill-text {
   letter-spacing: 1px;
 }
-.page .skills .skill-javascript .skill-text-hover {
+.page .skills .skill-javascript-heading .skill-text-hover {
   letter-spacing: 1px;
-  display: none;
-}
-.page .skills .skill-javascript:hover {
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-}
-.page .skills .skill-javascript:hover .skill-text-hover {
-  display: block;
-}
-.page .skills .skill-javascript:hover .skill-text {
-  display: none;
 }
 .page .skills .skill-nodejs {
-  background-color: #E69C50;
+  background-color: #9c403a;
   transition: 0.2s ease-in-out;
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  bottom: 0;
-  left: 0;
 }
 .page .skills .skill-nodejs-icon {
-  background-image: url("../../public/image/white-icon.png");
+  background-image: url("../../public/image/html-tag-iocn.png");
   width: 70px;
   height: 70px;
   background-repeat: no-repeat;
@@ -345,29 +335,12 @@ span {
 .page .skills .skill-nodejs-heading .skill-text {
   letter-spacing: 1px;
 }
-.page .skills .skill-nodejs .skill-text-hover {
+.page .skills .skill-nodejs-heading .skill-text-hover {
   letter-spacing: 1px;
-  display: none;
-}
-.page .skills .skill-nodejs:hover {
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-}
-.page .skills .skill-nodejs:hover .skill-text-hover {
-  display: block;
-}
-.page .skills .skill-nodejs:hover .skill-text {
-  display: none;
 }
 .page .skills .skill-reactjs {
-  background-color: #2DB38B;
+  background-color: red;
   transition: 0.2s ease-in-out;
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  bottom: 0;
-  right: 0;
 }
 .page .skills .skill-reactjs-icon {
   background-image: url("../../public/image/white-icon.png");
@@ -382,20 +355,8 @@ span {
 .page .skills .skill-reactjs-heading .skill-text {
   letter-spacing: 1px;
 }
-.page .skills .skill-reactjs .skill-text-hover {
+.page .skills .skill-reactjs-heading .skill-text-hover {
   letter-spacing: 1px;
-  display: none;
-}
-.page .skills .skill-reactjs:hover {
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-}
-.page .skills .skill-reactjs:hover .skill-text-hover {
-  display: block;
-}
-.page .skills .skill-reactjs:hover .skill-text {
-  display: none;
 }
 .page .contact-content-text {
   line-height: 1.3;

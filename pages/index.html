@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row">
         <!-- Start navigator column -->
-        <div class="col-sm-12 col-md-4 col-lg-3 page-column-information">
+        <div class="col-sm-12 col-md-4 col-lg-3 page-column-information px-4">
           <nav class="navigator">
             <div class="navigator-image my-2 py-4">
               <img src="../public/image/avatar.PNG" alt="avatar">
@@ -30,12 +30,14 @@
               <h3 class="navigator-author-text bold-text mb-2">NGUYEN DUY NHAT</h3>
               <h5 class="navigator-author-position mb-2">Fullstack Javascript Developer</h5>
             </div>
-            <div class="navigator-item my-2">
-              <ul class="navigator-item-profiles">
-                <li class="bold-text"><a class="py-4" href="#about">About Me</a></li>
-                <li class="bold-text"><a class="py-4" href="#skills">What I'm good at</a></li>
-                <li class="bold-text"><a class="py-4" href="#projects">My Project</a></li>
-                <li class="bold-text"><a class="py-4" href="#contact">Contact Me</a></li>
+            <div class="navigator-items my-2">
+              <ul class="navigator-items-profiles">
+                <li class="bold-text" id="items-control">
+                  <a class="item-control active py-4" href="#about">About Me</a>
+                  <a class="item-control py-4" href="#skills">What I'm good at</a>
+                  <a class="item-control py-4" href="#projects">My Projects</a>
+                  <a class="item-control py-4" href="#contact">Contact Me</a>
+                </li>
               </ul>
             </div>
             <div class="navigator-link my-2 py-4">
@@ -47,23 +49,22 @@
               </ul>
             </div>
             <div class="navigator-copyright my-2 py-4">
-              <small class="since"><span>&#174; </span>Since 2021</small>
+              <small class="since"><span>&#174; </span>Download my portfolio</small>
             </div>
           </nav>
         </div>
         <!-- End navigator column -->
 
-        <div class="col-sm-12 col-md-8 col-lg-9 pl-5 page-column-information">
+        <div class="col-sm-12 col-md-8 col-lg-9 page-column-information px-4">
           <!--Start about me -->
           <div class="about my-5 pb-5" id="about">
             <div class="row">
               <div class="col">
                 <div class="about-title my-2 px-5">
-                  <h1 class="about-title-text py-2 my-2">About Me</h1>
-                  <q class="about-title-des py-2 my-2">&#x22Programming is not only a job, it is my passion. Like
-                    everyone
-                    else, living with purpose and passion. And I'm passionate about programming that is my purpose in
-                    LIFE.&#x22</q>
+                  <h1 class="about-title-text text-shadow pos-relative py-2 my-2">About Me</h1>
+                  <q class="about-title-des py-2 my-2">&#x22Programming is not only a job, it is my passion.
+                    Like everyone else, living with purpose and passion. And I'm passionate about programming that is my
+                    purpose in LIFE.&#x22</q>
                 </div>
               </div>
             </div>
@@ -77,14 +78,16 @@
                 </div>
                 <div class="col-lg-6 height500px">
                   <div class="about-content-heading my-2 py-2">
-                    <h3 class="heading bold-text">Introduce myself</h3>
+                    <h3 class="heading bold-text text-shadow">Introduce myself</h3>
                   </div>
                   <div class="about-content-des my-2 py-2">
-                    <p class="des">Hi, I am a cheerful and friendly person who always helps people if I can do that.
-                      Exploit me because I can exploit<br> <br>Lorem, ipsum dolor sit amet consectetur
-                      adipisicing elit. Voluptates debitis nostrum
-                      deleniti, tempora et temporibus hic sed nemo dignissimos aperiam atque magni aliquid unde officia
-                      officiis eveniet, aliquam, magnam rerum?</p>
+                    <p class="des">Hi, I'm Duy Nhat Nguyen. <br> <br>
+                      My friendliness is a good thing to bond with people, I always
+                      learn the lifestyles of successful people, especially the simple and orderly lifestyle. Besides
+                      programming website, I also love football, go camping in the peaceful wilderness. <br> <br>
+                      Oh! There's more, I can play the guitar a bit and I really like music very much and, especially
+                      ballad and acoustic music. <br> <br>
+                      Have a nice day, be always happy! </p>
                   </div>
                 </div>
               </div>
@@ -97,157 +100,166 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="skills-heading my-2 py-2 px-5">
-                  <h1 class="skills-heading-text my-2 py-2">What I'm good at?</h1>
-                  <p class="skills-heading-des my-2 py-2">Programming is not only a job, it is my passion. I always
+                  <h1 class="skills-heading-text text-shadow pos-relative my-2 py-2">What I'm good at?</h1>
+                  <p class="skills-heading-des text-shadow my-2 py-2">Programming is not only a job, it is my passion. I
+                    always
                     wanted to learn about new technology because that kept me motivated to pursue this job.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="row pos-relative my-5" style="height: 640px; width: 100%;">
-              <div class="skill-htmt p-5">
-                <div class="skill-htmt-icon mb-4"></div>
-                <div class="skill-htmt-heading">
-                  <h3 class="skill-title mb-2 mt-2">HTML5 &#38; CSS3</h3>
-                  <p class="skill-text">I learning everyday, since 2019 to today. I happy always I learning everyday,
-                    since 2019 to today. I happy alwaysI learning everyday, since 2019 to today. I happy always
-                  </p>
-                  <div class="skill-text-hover">
-                    <ul class="list-skills">
-                      <li class="skill-detail my-2 py-2">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                      <li class="skill-detail">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                    </ul>
+            <div class="row my-5">
+              <div class="col col-sm-12 col-md-12 col-lg-6 col-12">
+                <div class="skill-html magrin-bottop-15px p-5">
+                  <div class="skill-html-icon mb-4"></div>
+                  <div class="skill-html-heading">
+                    <h3 class="skill-titleQ mb-2 mt-2">HTML5 &#38; CSS3</h3>
+                    <p class="skill-textQ">I learning everyday, since 2019 to today. I happy always I learning everyday,
+                      since 2019 to today. I happy alwaysI learning everyday, since 2019 to today. I happy always. Take
+                      it easy!
+                    </p>
+                    <div class="collapse skill-text-hover" id="skill-html">
+                      <ul class="list-skills">
+                        <li class="skill-detail my-2 py-2">
+                          <p class="skill-detail-textQ"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                        <li class="skill-detail">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-style" data-toggle="collapse" href="#skill-html" role="button"
+                      aria-expanded="false" aria-controls="skill-html">Detail</a>
                   </div>
                 </div>
               </div>
 
-              <div class="skill-javascript p-5">
-                <div class="skill-javascript-icon mb-4"></div>
-                <div class="skill-javascript-heading">
-                  <h3 class="skill-title mb-2 mt-2">Javascript đổi hover thành click</h3>
-                  <p class="skill-text">
-                    Consequuntur illo ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                    quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi
-                  </p>
-                  <div class="skill-text-hover">
-                    <ul class="list-skills">
-                      <li class="skill-detail my-2 py-2">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                      <li class="skill-detail">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                    </ul>
+              <div class="col col-sm-12 col-md-12 col-lg-6 col-12">
+                <div class="skill-javascript magrin-bottop-15px p-5">
+                  <div class="skill-javascript-icon mb-4"></div>
+                  <div class="skill-javascript-heading">
+                    <h3 class="skill-title mb-2 mt-2">Javascript</h3>
+                    <p class="skill-text">
+                      I learning everyday, since 2019 to today. I happy always I learning everyday,
+                      since 2019 to today. I happy alwaysI learning everyday, since 2019 to today. I happy always. Take
+                      it easy!
+                    </p>
+                    <div class="collapse skill-text-hover" id="skill-javascript">
+                      <ul class="list-skills">
+                        <li class="skill-detail my-2 py-2">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                        <li class="skill-detail">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-style" data-toggle="collapse" href="#skill-javascript" role="button"
+                      aria-expanded="false" aria-controls="skill-javascript">Detail</a>
                   </div>
                 </div>
               </div>
 
-              <div class="skill-nodejs p-5">
-                <div class="skill-nodejs-icon mb-4"></div>
-                <div class="skill-nodejs-heading">
-                  <h3 class="skill-title mb-2 mt-2">NodeJS</h3>
-                  <p class="skill-text">
-                    Consequuntur illo ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                    quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi
-                  </p>
-                  <div class="skill-text-hover">
-                    <ul class="list-skills">
-                      <li class="skill-detail my-2 py-2">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                      <li class="skill-detail">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                    </ul>
+              <div class="col col-sm-12 col-md-12 col-lg-6 col-12">
+                <div class="skill-nodejs magrin-bottop-15px p-5">
+                  <div class="skill-nodejs-icon mb-4"></div>
+                  <div class="skill-nodejs-heading">
+                    <h3 class="skill-title mb-2 mt-2">NodeJS</h3>
+                    <p class="skill-text">I learning everyday, since 2019 to today. I happy always I learning everyday,
+                      since 2019 to today. I happy alwaysI learning everyday, since 2019 to today. I happy always. Take
+                      it easy!
+                    </p>
+                    <div class="collapse skill-text-hover" id="skill-nodejs">
+                      <ul class="list-skills">
+                        <li class="skill-detail my-2 py-2">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                        <li class="skill-detail">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam, quisquam dolore Accusamus,
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-style" data-toggle="collapse" href="#skill-nodejs" aria-expanded="false"
+                      aria-controls="skill-nodejs">Detail</a>
                   </div>
                 </div>
               </div>
 
-              <div class="skill-reactjs p-5">
-                <div class="skill-reactjs-icon mb-4"></div>
-                <div class="skill-reactjs-heading">
-                  <h3 class="skill-title mb-2 mt-2">React JS</h3>
-                  <p class="skill-text">
-                    Consequuntur illo ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                    quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi
-                  </p>
-                  <div class="skill-text-hover">
-                    <ul class="list-skills">
-                      <li class="skill-detail my-2 py-2">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                      <li class="skill-detail">
-                        <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
-                          doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
-                          illo
-                          ad excepturi et. Accusamus, veritatis, doloribus aliquam,
-                          quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
-                      </li>
-                    </ul>
+              <div class="col col-sm-12 col-md-12 col-lg-6 col-12">
+                <div class="skill-reactjs magrin-bottop-15px p-5">
+                  <div class="skill-reactjs-icon mb-4"></div>
+                  <div class="skill-reactjs-heading">
+                    <h3 class="skill-title mb-2 mt-2">React JS</h3>
+                    <p class="skill-text">I learning everyday, since 2019 to today. I happy always I learning everyday,
+                      since 2019 to today. I happy alwaysI learning everyday, since 2019 to today. I happy always. Take
+                      it easy!
+                    </p>
+                    <div class="collapse skill-text-hover" id="skill-reactjs">
+                      <ul class="list-skills">
+                        <li class="skill-detail my-2 py-2">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo
+                            ad excepturi et. Accusamus, veritatis, doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi</p>
+                        </li>
+                        <li class="skill-detail">
+                          <p class="skill-detail-text"> Consequuntur illo ad excepturi et. Accusamus, veritatis,
+                            doloribus aliquam,
+                            quisquam dolore Accusamus, veritatis Accusamus, Consequuntur illo ad excepturi Consequuntur
+                            illo</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-style" data-toggle="collapse" href="#skill-reactjs" aria-expanded="false"
+                      aria-controls="skill-reactjs">Detail</a>
                   </div>
                 </div>
               </div>
@@ -329,7 +341,6 @@
       </div>
     </div>
   </div>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -339,6 +350,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="../controllers/index.controller.js"></script>
 
 </body>
 
