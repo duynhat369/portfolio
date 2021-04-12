@@ -13,7 +13,7 @@ h3,
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 4px #8C665E;
+  text-shadow: 2px 2px 4px #2c2b2b;
 }
 
 .pos-relative {
@@ -31,6 +31,7 @@ h3,
   background-color: #CC635B;
   color: #ffffff;
   transition: 0.8s ease;
+  font-weight: 700;
 }
 .btn-style:hover {
   opacity: 0.8;
@@ -173,7 +174,7 @@ span {
 }
 .page .navigator-link {
   width: 100%;
-  border-bottom: 1px solid #8C665E;
+  border-bottom: 1px solid #2c2b2b;
 }
 .page .navigator-link-social {
   display: flex;
@@ -192,16 +193,27 @@ span {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #9c403a;
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
   transition: 0.8s ease;
 }
 .page .navigator-link-social li a:hover {
-  color: #9c403a;
   background-color: #ffffff;
   padding-bottom: 0.5rem;
+  color: #CC635B;
+}
+.page .navigator-link-social li .facebook {
+  background-color: #055ed3;
+}
+.page .navigator-link-social li .github {
+  background-color: #494141;
+}
+.page .navigator-link-social li .linkedin {
+  background-color: #004182;
+}
+.page .navigator-link-social li .instagram {
+  background-color: #d6a10e;
 }
 .page .navigator-copyright {
   width: 100%;
@@ -223,6 +235,7 @@ span {
 }
 .page .about-title-text {
   letter-spacing: 2px;
+  text-align: center;
 }
 .page .about-title-text::after {
   border-bottom: 1px solid #CC635B;
@@ -262,6 +275,7 @@ span {
 }
 .page .skills-heading-text {
   letter-spacing: 2px;
+  text-align: center;
 }
 .page .skills-heading-text::after {
   border-bottom: 1px solid #CC635B;
@@ -279,7 +293,7 @@ span {
   letter-spacing: 1px;
 }
 .page .skills .skill-html {
-  background-color: #c29ba4;
+  background-color: #62CDD9;
   transition: 0.2s ease-in-out;
 }
 .page .skills .skill-html-icon {
@@ -291,15 +305,15 @@ span {
 }
 .page .skills .skill-html-heading .skill-title {
   letter-spacing: 2px;
+  color: #ffffff;
 }
-.page .skills .skill-html-heading .skill-text {
+.page .skills .skill-html-heading .skill-text,
+.page .skills .skill-html-heading .skill-text-details {
   letter-spacing: 1px;
-}
-.page .skills .skill-html-heading .skill-text-hover {
-  letter-spacing: 1px;
+  color: #ffffff;
 }
 .page .skills .skill-javascript {
-  background-color: #CC635B;
+  background-color: #F29E38;
   transition: 0.2s ease-in-out;
 }
 .page .skills .skill-javascript-icon {
@@ -311,35 +325,35 @@ span {
 }
 .page .skills .skill-javascript-heading .skill-title {
   letter-spacing: 2px;
+  color: #ffffff;
 }
-.page .skills .skill-javascript-heading .skill-text {
+.page .skills .skill-javascript-heading .skill-text,
+.page .skills .skill-javascript-heading .skill-text-details {
   letter-spacing: 1px;
+  color: #ffffff;
 }
-.page .skills .skill-javascript-heading .skill-text-hover {
-  letter-spacing: 1px;
-}
-.page .skills .skill-nodejs {
-  background-color: #9c403a;
+.page .skills .skill-bootstrap {
+  background-color: #F2D022;
   transition: 0.2s ease-in-out;
 }
-.page .skills .skill-nodejs-icon {
+.page .skills .skill-bootstrap-icon {
   background-image: url("../../public/image/html-tag-iocn.png");
   width: 70px;
   height: 70px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.page .skills .skill-nodejs-heading .skill-title {
+.page .skills .skill-bootstrap-heading .skill-title {
   letter-spacing: 2px;
+  color: #ffffff;
 }
-.page .skills .skill-nodejs-heading .skill-text {
+.page .skills .skill-bootstrap-heading .skill-text,
+.page .skills .skill-bootstrap-heading .skill-text-details {
   letter-spacing: 1px;
-}
-.page .skills .skill-nodejs-heading .skill-text-hover {
-  letter-spacing: 1px;
+  color: #ffffff;
 }
 .page .skills .skill-reactjs {
-  background-color: red;
+  background-color: #3A758C;
   transition: 0.2s ease-in-out;
 }
 .page .skills .skill-reactjs-icon {
@@ -351,24 +365,97 @@ span {
 }
 .page .skills .skill-reactjs-heading .skill-title {
   letter-spacing: 2px;
+  color: #ffffff;
 }
-.page .skills .skill-reactjs-heading .skill-text {
+.page .skills .skill-reactjs-heading .skill-text,
+.page .skills .skill-reactjs-heading .skill-text-details {
   letter-spacing: 1px;
+  color: #ffffff;
 }
-.page .skills .skill-reactjs-heading .skill-text-hover {
-  letter-spacing: 1px;
+.page .projects {
+  border-bottom: 2px solid #CC635B;
 }
-.page .contact-content-text {
+.page .projects-heading {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.page .projects-heading-text {
+  letter-spacing: 2px;
+  text-align: center;
+}
+.page .projects-heading-text::after {
+  border-bottom: 1px solid #CC635B;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+}
+.page .projects-heading-des {
+  text-align: center;
   line-height: 1.3;
   letter-spacing: 1px;
 }
-.page .contact-content-text ul li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+.page .projects .projects-silde-title {
+  color: #ffffff;
 }
-.page .contact-content-text ul li svg {
-  margin-right: 0.5rem;
+.page .contact {
+  border-bottom: 2px solid #CC635B;
+}
+.page .contact-heading {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.page .contact-heading-text {
+  letter-spacing: 2px;
+  text-align: center;
+}
+.page .contact-heading-text::after {
+  border-bottom: 1px solid #CC635B;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+}
+.page .contact-heading-des {
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.page .contact-info-list {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+.page .contact-info-list li {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100% 0px;
+  position: relative;
+}
+.page .contact-info-list li img {
+  width: 20px;
+  height: 20px;
+}
+.page .contact-info-list li span {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

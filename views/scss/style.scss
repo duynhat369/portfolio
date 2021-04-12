@@ -31,6 +31,7 @@ h3,
   background-color: $primary-color;
   color: $white-color;
   transition: 0.8s ease;
+  font-weight: 700;
   &:hover {
     opacity: 0.8;
   }
@@ -170,16 +171,27 @@ span {
           height: 40px;
           a {
             @include flex(row, center, center, nowrap);
-            background-color: $third-color;
             width: 100%;
             height: 100%;
             border-radius: 0.3rem;
             transition: 0.8s ease;
             &:hover {
-              color: $third-color;
               background-color: $white-color;
               padding-bottom: 0.5rem;
+              color: $primary-color;
             }
+          }
+          .facebook {
+            background-color: $facebook;
+          }
+          .github {
+            background-color: $github;
+          }
+          .linkedin {
+            background-color: $linkedin;
+          }
+          .instagram {
+            background-color: $instagram;
           }
         }
       }
@@ -198,6 +210,7 @@ span {
       @include flex(column, center, center, nowrap);
       &-text {
         letter-spacing: 2px;
+        text-align: center;
         &::after {
           border-bottom: 1px solid $primary-color;
           content: "";
@@ -240,6 +253,7 @@ span {
       @include flex(column, center, center, nowrap);
       &-text {
         letter-spacing: 2px;
+        text-align: center;
       }
       &-text::after {
         border-bottom: 1px solid $primary-color;
@@ -259,7 +273,7 @@ span {
     }
 
     .skill-html {
-      background-color: $extra-color;
+      background-color: $html;
       transition: 0.2s ease-in-out;
       &-icon {
         background-image: url("../../public/image/html-tag-iocn.png");
@@ -271,18 +285,18 @@ span {
       &-heading {
         .skill-title {
           letter-spacing: 2px;
+          color: $white-color;
         }
-        .skill-text {
+        .skill-text,
+        .skill-text-details {
           letter-spacing: 1px;
-        }
-        .skill-text-hover {
-          letter-spacing: 1px;
+          color: $white-color;
         }
       }
     }
 
     .skill-javascript {
-      background-color: $primary-color;
+      background-color: $javascript;
       transition: 0.2s ease-in-out;
       &-icon {
         background-image: url("../../public/image/white-icon.png");
@@ -294,18 +308,18 @@ span {
       &-heading {
         .skill-title {
           letter-spacing: 2px;
+          color: $white-color;
         }
-        .skill-text {
+        .skill-text,
+        .skill-text-details {
           letter-spacing: 1px;
-        }
-        .skill-text-hover {
-          letter-spacing: 1px;
+          color: $white-color;
         }
       }
     }
 
-    .skill-nodejs {
-      background-color: $third-color;
+    .skill-bootstrap {
+      background-color: $bootstrap;
       transition: 0.2s ease-in-out;
       &-icon {
         background-image: url("../../public/image/html-tag-iocn.png");
@@ -317,18 +331,18 @@ span {
       &-heading {
         .skill-title {
           letter-spacing: 2px;
+          color: $white-color;
         }
-        .skill-text {
+        .skill-text,
+        .skill-text-details {
           letter-spacing: 1px;
-        }
-        .skill-text-hover {
-          letter-spacing: 1px;
+          color: $white-color;
         }
       }
     }
 
     .skill-reactjs {
-      background-color: red;
+      background-color: $react;
       transition: 0.2s ease-in-out;
       &-icon {
         background-image: url("../../public/image/white-icon.png");
@@ -340,33 +354,96 @@ span {
       &-heading {
         .skill-title {
           letter-spacing: 2px;
+          color: $white-color;
         }
-        .skill-text {
+        .skill-text,
+        .skill-text-details {
           letter-spacing: 1px;
-        }
-        .skill-text-hover {
-          letter-spacing: 1px;
+          color: $white-color;
         }
       }
     }
   }
   //end skills css
 
-  .project {
-  }
-
-  .contact {
-    &-content-text {
-      line-height: 1.3;
-      letter-spacing: 1px;
-      & ul li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.5rem;
+  //Projects start
+  .projects {
+    border-bottom: 2px solid $primary-color;
+    &-heading {
+      @include flex(column, center, center, nowrap);
+      &-text {
+        letter-spacing: 2px;
+        text-align: center;
       }
-      & ul li svg {
-        margin-right: 0.5rem;
+      &-text::after {
+        border-bottom: 1px solid $primary-color;
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+      }
+      &-des {
+        text-align: center;
+        line-height: 1.3;
+        letter-spacing: 1px;
+      }
+    }
+
+    .projects-silde {
+      &-title {
+        color: $white-color;
       }
     }
   }
+  //Projects end
+
+  //Contact start
+  .contact {
+    border-bottom: 2px solid $primary-color;
+    &-heading {
+      @include flex(column, center, center, nowrap);
+      &-text {
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      &-text::after {
+        border-bottom: 1px solid $primary-color;
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+      }
+      &-des {
+        text-align: center;
+        line-height: 1.3;
+        letter-spacing: 1px;
+      }
+    }
+
+    &-info {
+      &-list {
+        @include flex(column, start, start, nowrap);
+        li {
+          @include flex(row, center, flex-start, nowrap);
+          width: 100%;
+          height: 100%0px;
+          position: relative;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  //Contact end
 }

@@ -1,9 +1,14 @@
 $primary-color: #CC635B;
-$second-color: #CC635B;
-$third-color: #9c403a;
-$border-color: #8C665E;
-$extra-color: #c29ba4;
 $white-color: #ffffff;
+$border-color: #2c2b2b;
+$facebook: #055ed3;
+$linkedin: #004182;
+$github: #494141;
+$instagram: #d6a10e;
+$html:#62CDD9;
+$javascript:#F29E38;
+$bootstrap:#F2D022;
+$react:#3A758C;
 
 @mixin flex(
   $flow: column,
