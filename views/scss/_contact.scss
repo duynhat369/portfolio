@@ -1,0 +1,19 @@
+//Contact start
+.contact {
+  &-info {
+    &-list {
+      @include flex(column, start, start, nowrap);
+      li {
+        @include flex(row, center, flex-start, nowrap);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+//Contact end

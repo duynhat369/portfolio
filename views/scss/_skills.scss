@@ -1,0 +1,61 @@
+//Start skills css
+.skills {
+  .technicalSkills-content,
+  .softSkills-content {
+    background-color: $primary-color;
+  }
+
+  //Start softSkills content
+  .softSkills-content {
+  }
+  //End softSkills content
+
+  //technical skills and soft skills (class con có tên giống nhau có thể css chung)
+  .programming-languages,
+  .frameworks,
+  .version-control,
+  .languages,
+  .sports,
+  .teamwork,
+  .creativity {
+    &-heading {
+      @include flex(row, center, start, nowrap);
+
+      &__text {
+        color: $white-color;
+        position: relative;
+        &::after {
+          border-bottom: 2px solid $white-color;
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 0;
+          bottom: 0;
+          left: 0;
+          transform: translate(50%, 50%);
+        }
+      }
+      &__icon i {
+        font-size: 1.6rem;
+        color: $white-color;
+      }
+    }
+
+    .html,
+    .javascript,
+    .bootstrap,
+    .react,
+    .github {
+      &-content {
+        &__title {
+          letter-spacing: 2px;
+        }
+
+        &__detail {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+//End skills css

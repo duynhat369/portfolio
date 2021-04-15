@@ -1,0 +1,17 @@
+//about css
+.about {
+  &-image {
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  .about-content {
+    &-text {
+      &__des {
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+//end about css

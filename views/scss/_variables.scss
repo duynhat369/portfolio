@@ -1,14 +1,16 @@
-$primary-color: #CC635B;
+$primary-color: #cc635b;
 $white-color: #ffffff;
-$border-color: #2c2b2b;
+$background-color: #f1f2f7;
+$text-light-color: #686868;
+$text-black-color: #585858;
 $facebook: #055ed3;
-$linkedin: #004182;
+$linked: #004182;
 $github: #494141;
 $instagram: #d6a10e;
-$html:#62CDD9;
-$javascript:#F29E38;
-$bootstrap:#F2D022;
-$react:#3A758C;
+$html: #62cdd9;
+$javascript: #f29e38;
+$bootstrap: #f2d022;
+$react: #3a758c;
 
 @mixin flex(
   $flow: column,
