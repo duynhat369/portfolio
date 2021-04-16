@@ -169,7 +169,7 @@ small {
   text-shadow: -2px 4px 4px #686868;
 }
 
-.page-column-information {
+.column-padding0 {
   padding: 0;
 }
 
@@ -181,8 +181,8 @@ small {
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   background-color: #cc635b;
-  color: #ffffff;
-  transition: 0.8s ease;
+  color: white;
+  transition: 0.5s ease;
   font-weight: 700;
 }
 .btn-style:hover {
@@ -203,7 +203,7 @@ h1 {
 .navigator-link-social li a,
 .navigator-copyright,
 .navigator-author {
-  color: #ffffff;
+  color: white;
 }
 
 .about-heading,
@@ -273,12 +273,11 @@ h1 {
 .projects,
 .goals,
 .contact {
-  background-color: #ffffff;
+  background-color: white;
   border-bottom: 2px solid #cc635b;
   border-radius: 5px;
 }
 
-.about-content-text__heading,
 .technicalSkills-heading-text,
 .softSkills-heading-text {
   display: inline-block;
@@ -308,7 +307,7 @@ h1 {
 }
 .navigator-image img {
   padding: 3px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50%;
   width: 50%;
   height: 50%;
@@ -346,11 +345,11 @@ h1 {
   justify-content: space-around;
   flex-wrap: nowrap;
   width: 100%;
-  transition: 0.8s ease;
-  border-bottom: 2px solid #ffffff;
+  transition: 0.5s ease;
+  border-bottom: 2px solid white;
 }
 .navigator-items-profiles li a:hover {
-  background-color: #ffffff;
+  background-color: white;
   color: #cc635b;
   border-right: 1px solid #cc635b;
   border-left: 1px solid #cc635b;
@@ -365,7 +364,7 @@ h1 {
   color: #cc635b;
 }
 .navigator-items-profiles li .active {
-  background-color: #ffffff;
+  background-color: white;
   color: #cc635b;
   border-right: 2px solid #cc635b;
   border-left: 2px solid #cc635b;
@@ -380,7 +379,7 @@ h1 {
   color: #cc635b;
 }
 .navigator-items-profiles li:first-child {
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid white;
 }
 .navigator-link {
   width: 100%;
@@ -406,15 +405,15 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 }
 .navigator-link-social li a:hover {
-  background-color: #ffffff;
+  background-color: white;
   padding-bottom: 0.5rem;
   color: #cc635b;
 }
 .navigator-link-social li .facebook {
-  background-color: #055ed3;
+  background-color: #0055c5;
 }
 .navigator-link-social li .github {
   background-color: #494141;
@@ -423,7 +422,7 @@ h1 {
   background-color: #004182;
 }
 .navigator-link-social li .instagram {
-  background-color: #d6a10e;
+  background-color: #26533c;
 }
 .navigator-copyright {
   width: 100%;
@@ -445,9 +444,24 @@ h1 {
   letter-spacing: 1px;
 }
 
-.skills .technicalSkills-content,
+.skills .technicalSkills-heading-text {
+  background-color: #e0c78b;
+  color: white;
+}
+.skills .technicalSkills-content {
+  background-color: #e0c78b;
+}
+.skills .softSkills-heading-text {
+  background-color: #aec785;
+  color: white;
+}
 .skills .softSkills-content {
-  background-color: #cc635b;
+  background-color: #aec785;
+}
+.skills .softSkills-content {
+  display: flex;
+  flex-flow: column;
+  flex: 0 1 50%;
 }
 .skills .programming-languages-heading,
 .skills .frameworks-heading,
@@ -469,8 +483,9 @@ h1 {
 .skills .sports-heading__text,
 .skills .teamwork-heading__text,
 .skills .creativity-heading__text {
-  color: #ffffff;
+  color: white;
   position: relative;
+  letter-spacing: 2px;
 }
 .skills .programming-languages-heading__text::after,
 .skills .frameworks-heading__text::after,
@@ -479,7 +494,7 @@ h1 {
 .skills .sports-heading__text::after,
 .skills .teamwork-heading__text::after,
 .skills .creativity-heading__text::after {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid white;
   content: "";
   position: absolute;
   width: 50%;
@@ -496,85 +511,155 @@ h1 {
 .skills .teamwork-heading__icon i,
 .skills .creativity-heading__icon i {
   font-size: 1.6rem;
-  color: #ffffff;
+  color: white;
 }
 .skills .programming-languages .html-content__title,
 .skills .programming-languages .javascript-content__title,
 .skills .programming-languages .bootstrap-content__title,
 .skills .programming-languages .react-content__title,
+.skills .programming-languages .sass-content__title,
 .skills .programming-languages .github-content__title,
+.skills .programming-languages .languages-content__title,
+.skills .programming-languages .sports-content__title,
+.skills .programming-languages .teamwork-content__title,
+.skills .programming-languages .creativity-content__title,
 .skills .frameworks .html-content__title,
 .skills .frameworks .javascript-content__title,
 .skills .frameworks .bootstrap-content__title,
 .skills .frameworks .react-content__title,
+.skills .frameworks .sass-content__title,
 .skills .frameworks .github-content__title,
+.skills .frameworks .languages-content__title,
+.skills .frameworks .sports-content__title,
+.skills .frameworks .teamwork-content__title,
+.skills .frameworks .creativity-content__title,
 .skills .version-control .html-content__title,
 .skills .version-control .javascript-content__title,
 .skills .version-control .bootstrap-content__title,
 .skills .version-control .react-content__title,
+.skills .version-control .sass-content__title,
 .skills .version-control .github-content__title,
+.skills .version-control .languages-content__title,
+.skills .version-control .sports-content__title,
+.skills .version-control .teamwork-content__title,
+.skills .version-control .creativity-content__title,
 .skills .languages .html-content__title,
 .skills .languages .javascript-content__title,
 .skills .languages .bootstrap-content__title,
 .skills .languages .react-content__title,
+.skills .languages .sass-content__title,
 .skills .languages .github-content__title,
+.skills .languages .languages-content__title,
+.skills .languages .sports-content__title,
+.skills .languages .teamwork-content__title,
+.skills .languages .creativity-content__title,
 .skills .sports .html-content__title,
 .skills .sports .javascript-content__title,
 .skills .sports .bootstrap-content__title,
 .skills .sports .react-content__title,
+.skills .sports .sass-content__title,
 .skills .sports .github-content__title,
+.skills .sports .languages-content__title,
+.skills .sports .sports-content__title,
+.skills .sports .teamwork-content__title,
+.skills .sports .creativity-content__title,
 .skills .teamwork .html-content__title,
 .skills .teamwork .javascript-content__title,
 .skills .teamwork .bootstrap-content__title,
 .skills .teamwork .react-content__title,
+.skills .teamwork .sass-content__title,
 .skills .teamwork .github-content__title,
+.skills .teamwork .languages-content__title,
+.skills .teamwork .sports-content__title,
+.skills .teamwork .teamwork-content__title,
+.skills .teamwork .creativity-content__title,
 .skills .creativity .html-content__title,
 .skills .creativity .javascript-content__title,
 .skills .creativity .bootstrap-content__title,
 .skills .creativity .react-content__title,
-.skills .creativity .github-content__title {
+.skills .creativity .sass-content__title,
+.skills .creativity .github-content__title,
+.skills .creativity .languages-content__title,
+.skills .creativity .sports-content__title,
+.skills .creativity .teamwork-content__title,
+.skills .creativity .creativity-content__title {
   letter-spacing: 2px;
 }
 .skills .programming-languages .html-content__detail,
 .skills .programming-languages .javascript-content__detail,
 .skills .programming-languages .bootstrap-content__detail,
 .skills .programming-languages .react-content__detail,
+.skills .programming-languages .sass-content__detail,
 .skills .programming-languages .github-content__detail,
+.skills .programming-languages .languages-content__detail,
+.skills .programming-languages .sports-content__detail,
+.skills .programming-languages .teamwork-content__detail,
+.skills .programming-languages .creativity-content__detail,
 .skills .frameworks .html-content__detail,
 .skills .frameworks .javascript-content__detail,
 .skills .frameworks .bootstrap-content__detail,
 .skills .frameworks .react-content__detail,
+.skills .frameworks .sass-content__detail,
 .skills .frameworks .github-content__detail,
+.skills .frameworks .languages-content__detail,
+.skills .frameworks .sports-content__detail,
+.skills .frameworks .teamwork-content__detail,
+.skills .frameworks .creativity-content__detail,
 .skills .version-control .html-content__detail,
 .skills .version-control .javascript-content__detail,
 .skills .version-control .bootstrap-content__detail,
 .skills .version-control .react-content__detail,
+.skills .version-control .sass-content__detail,
 .skills .version-control .github-content__detail,
+.skills .version-control .languages-content__detail,
+.skills .version-control .sports-content__detail,
+.skills .version-control .teamwork-content__detail,
+.skills .version-control .creativity-content__detail,
 .skills .languages .html-content__detail,
 .skills .languages .javascript-content__detail,
 .skills .languages .bootstrap-content__detail,
 .skills .languages .react-content__detail,
+.skills .languages .sass-content__detail,
 .skills .languages .github-content__detail,
+.skills .languages .languages-content__detail,
+.skills .languages .sports-content__detail,
+.skills .languages .teamwork-content__detail,
+.skills .languages .creativity-content__detail,
 .skills .sports .html-content__detail,
 .skills .sports .javascript-content__detail,
 .skills .sports .bootstrap-content__detail,
 .skills .sports .react-content__detail,
+.skills .sports .sass-content__detail,
 .skills .sports .github-content__detail,
+.skills .sports .languages-content__detail,
+.skills .sports .sports-content__detail,
+.skills .sports .teamwork-content__detail,
+.skills .sports .creativity-content__detail,
 .skills .teamwork .html-content__detail,
 .skills .teamwork .javascript-content__detail,
 .skills .teamwork .bootstrap-content__detail,
 .skills .teamwork .react-content__detail,
+.skills .teamwork .sass-content__detail,
 .skills .teamwork .github-content__detail,
+.skills .teamwork .languages-content__detail,
+.skills .teamwork .sports-content__detail,
+.skills .teamwork .teamwork-content__detail,
+.skills .teamwork .creativity-content__detail,
 .skills .creativity .html-content__detail,
 .skills .creativity .javascript-content__detail,
 .skills .creativity .bootstrap-content__detail,
 .skills .creativity .react-content__detail,
-.skills .creativity .github-content__detail {
+.skills .creativity .sass-content__detail,
+.skills .creativity .github-content__detail,
+.skills .creativity .languages-content__detail,
+.skills .creativity .sports-content__detail,
+.skills .creativity .teamwork-content__detail,
+.skills .creativity .creativity-content__detail {
   letter-spacing: 1px;
 }
 
 .projects .projects-silde-title {
-  color: #ffffff;
+  color: white;
 }
 
 .contact-info-list {
@@ -597,6 +682,46 @@ h1 {
 .contact-info-list li img {
   width: 20px;
   height: 20px;
+}
+.contact-social-items {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+.contact-social-items li {
+  width: 40px;
+  height: 40px;
+}
+.contact-social-items li a {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  transition: 0.5s ease;
+  color: white;
+}
+.contact-social-items li a:hover {
+  background-color: white;
+  padding-bottom: 0.5rem;
+  color: #cc635b;
+}
+.contact-social-items li .facebook {
+  background-color: #0055c5;
+}
+.contact-social-items li .github {
+  background-color: #494141;
+}
+.contact-social-items li .linked {
+  background-color: #004182;
+}
+.contact-social-items li .instagram {
+  background-color: #26533c;
 }
 
 /*# sourceMappingURL=style.css.map */

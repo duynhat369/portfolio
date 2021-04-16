@@ -160,7 +160,7 @@ small {
   text-shadow: -2px 4px 4px $text-light-color;
 }
 
-.page-column-information {
+.column-padding0 {
   padding: 0;
 }
 
@@ -173,7 +173,7 @@ small {
   padding: 0.5rem 1rem;
   background-color: $primary-color;
   color: $white-color;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
   font-weight: 700;
   &:hover {
     opacity: 0.8;
@@ -266,7 +266,6 @@ h1 {
 //end css same between section
 
 //Start css same between heading h3 tag
-.about-content-text__heading,
 .technicalSkills-heading-text,
 .softSkills-heading-text {
   display: inline-block;
