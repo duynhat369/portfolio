@@ -28,7 +28,7 @@
 
   &-items {
     width: 100%;
-    &-profiles {
+    &-profile {
       li {
         @include flex(column, center, space-around, nowrap);
         width: 100%;

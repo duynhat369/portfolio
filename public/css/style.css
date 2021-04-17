@@ -173,6 +173,14 @@ small {
   padding: 0;
 }
 
+.column-pl0 {
+  padding-left: 0;
+}
+
+.column-pr0 {
+  padding-right: 0;
+}
+
 .pos-relative {
   position: relative;
 }
@@ -195,15 +203,27 @@ h1 {
   font-weight: 700;
 }
 
-.skill-html-content,
-.skill-javascript-content,
-.skill-bootstrap-content,
-.skill-react-content,
-.navigator-items-profiles li a,
+.navigator-items-profile li a,
 .navigator-link-social li a,
 .navigator-copyright,
 .navigator-author {
   color: white;
+}
+
+.html-content,
+.javascript-content,
+.bootstrap-content,
+.react-content,
+.sass-content,
+.github-content,
+.softSkills-heading-des,
+.technicalSkills-heading-des,
+.contact-info-item,
+.languages-content__detail,
+.sports-content__detail,
+.teamwork-content__detail,
+.creativity-content__detail {
+  color: #585858;
 }
 
 .about-heading,
@@ -234,10 +254,7 @@ h1 {
 .skills-heading-des,
 .projects-heading-des,
 .goals-heading-des,
-.contact-heading-des,
-.softSkills-heading,
-.technicalSkills-heading,
-.contact-info-item {
+.contact-heading-des {
   color: #686868;
   letter-spacing: 1px;
 }
@@ -268,11 +285,7 @@ h1 {
   transform: translate(50%, 50%);
 }
 
-.about,
-.skills,
-.projects,
-.goals,
-.contact {
+section {
   background-color: white;
   border-bottom: 2px solid #cc635b;
   border-radius: 5px;
@@ -327,7 +340,7 @@ h1 {
 .navigator-items {
   width: 100%;
 }
-.navigator-items-profiles li {
+.navigator-items-profile li {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -337,7 +350,7 @@ h1 {
   height: 100%;
   font-size: 1rem;
 }
-.navigator-items-profiles li a {
+.navigator-items-profile li a {
   position: relative;
   display: flex;
   flex-flow: column;
@@ -348,14 +361,14 @@ h1 {
   transition: 0.5s ease;
   border-bottom: 2px solid white;
 }
-.navigator-items-profiles li a:hover {
+.navigator-items-profile li a:hover {
   background-color: white;
   color: #cc635b;
   border-right: 1px solid #cc635b;
   border-left: 1px solid #cc635b;
   padding-left: 1rem;
 }
-.navigator-items-profiles li a:hover::before {
+.navigator-items-profile li a:hover::before {
   content: " >";
   position: absolute;
   top: 50%;
@@ -363,14 +376,14 @@ h1 {
   transform: translate(-50%, -50%);
   color: #cc635b;
 }
-.navigator-items-profiles li .active {
+.navigator-items-profile li .active {
   background-color: white;
   color: #cc635b;
   border-right: 2px solid #cc635b;
   border-left: 2px solid #cc635b;
   padding-left: 1rem;
 }
-.navigator-items-profiles li .active::before {
+.navigator-items-profile li .active::before {
   content: " >";
   position: absolute;
   top: 50%;
@@ -378,7 +391,7 @@ h1 {
   transform: translate(-50%, -50%);
   color: #cc635b;
 }
-.navigator-items-profiles li:first-child {
+.navigator-items-profile li:first-child {
   border-top: 2px solid white;
 }
 .navigator-link {
@@ -660,6 +673,72 @@ h1 {
 
 .projects .projects-silde-title {
   color: white;
+}
+
+.goals {
+  width: 100%;
+}
+.goals .goals-item {
+  position: relative;
+  width: calc(100% - 100px);
+  float: right;
+  color: #686868;
+}
+.goals .goals-item .goal-content {
+  border: 1px solid #f1f2f7;
+  position: relative;
+}
+.goals .goals-item .goal-content::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: -100px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.goals .goals-item .goal-content .goal-des::after {
+  content: "";
+  border: 2px solid;
+  height: calc(100% + 50px);
+  position: absolute;
+  top: 0;
+  left: -77px;
+}
+.goals .goals-item .goal-content .des1::after {
+  border: 2px solid rgba(204, 99, 91, 0.2);
+}
+.goals .goals-item .goal-content .des2::after {
+  border: 2px solid rgba(174, 199, 133, 0.2);
+}
+.goals .goals-item .goal-content .des3::after {
+  border: 2px solid rgba(224, 199, 139, 0.2);
+}
+.goals .item1 {
+  box-shadow: 0 -1px 10px 4px rgba(204, 99, 91, 0.2);
+}
+.goals .item1::before {
+  content: "01";
+  background-color: #cc635b;
+}
+.goals .item2 {
+  box-shadow: 0 -1px 10px 4px rgba(174, 199, 133, 0.2);
+}
+.goals .item2::before {
+  content: "02";
+  background-color: #aec785;
+}
+.goals .item3 {
+  box-shadow: 0 -1px 10px 4px rgba(224, 199, 139, 0.2);
+}
+.goals .item3::before {
+  content: "03";
+  background-color: #e0c78b;
 }
 
 .contact-info-list {

@@ -1,4 +1,77 @@
-  //goals start
-  .goals {
+//goals start
+.goals {
+  //border
+  width: 100%;
+  .goals-item {
+    position: relative;
+    width: calc(100% - 100px);
+    float: right;
+    color: $text-light-color;
+    .goal-content {
+      border: 1px solid $background-color;
+      position: relative;
+      &::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: -100px;
+
+        border-radius: 50%;
+        color: $white-color;
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+
+      .goal-des {
+        &::after {
+          content: "";
+          border: 2px solid;
+          height: calc(100% + 50px); //4rem = 48px + border top,bot 1px
+          position: absolute;
+          top: 0;
+          left: -77px; //float right 100px => left 100px - width 50px/2 + border 2px
+        }
+      }
+
+      .des1::after {
+        border: 2px solid $primary-opacity;
+      }
+      .des2::after {
+        border: 2px solid $softSKills-opacity;
+      }
+      .des3::after {
+        border: 2px solid $technicalSkills-opacity;
+      }
+    }
   }
-  //goals end
+
+  .item1 {
+    box-shadow: 0 -1px 10px 4px $primary-opacity;
+    &::before {
+      content: "01";
+      background-color: $primary-color;
+    }
+  }
+
+  .item2 {
+    box-shadow: 0 -1px 10px 4px $softSKills-opacity;
+    &::before {
+      content: "02";
+      background-color: $softSKills;
+    }
+  }
+
+  .item3 {
+    box-shadow: 0 -1px 10px 4px $technicalSkills-opacity;
+    &::before {
+      content: "03";
+      background-color: $technicalSkills;
+    }
+  }
+}
+//goals end

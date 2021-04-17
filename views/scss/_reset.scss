@@ -164,6 +164,14 @@ small {
   padding: 0;
 }
 
+.column-pl0 {
+  padding-left: 0;
+}
+
+.column-pr0 {
+  padding-right: 0;
+}
+
 .pos-relative {
   position: relative;
 }
@@ -187,18 +195,34 @@ h1 {
 }
 //End class behind class (override attributes)
 
-//start css same between tag
-.skill-html-content,
-.skill-javascript-content,
-.skill-bootstrap-content,
-.skill-react-content,
-.navigator-items-profiles li a,
+//white color
+.navigator-items-profile li a,
 .navigator-link-social li a,
 .navigator-copyright,
 .navigator-author {
   color: $white-color;
 }
 
+//black color
+.html-content,
+.javascript-content,
+.bootstrap-content,
+.react-content,
+.sass-content,
+.github-content,
+.softSkills-heading-des,
+.technicalSkills-heading-des,
+.contact-info-item,
+.languages-content__detail,
+.sports-content__detail,
+.teamwork-content__detail,
+.creativity-content__detail {
+  color: $text-black-color;
+}
+
+//light color
+
+//start css same between tag
 .about-heading,
 .about-content-text,
 .skills-heading,
@@ -218,10 +242,7 @@ h1 {
 .skills-heading-des,
 .projects-heading-des,
 .goals-heading-des,
-.contact-heading-des,
-.softSkills-heading,
-.technicalSkills-heading,
-.contact-info-item {
+.contact-heading-des {
   color: $text-light-color;
   letter-spacing: 1px;
 }
@@ -254,11 +275,8 @@ h1 {
 //end css same between tag
 
 //start css same between section
-.about,
-.skills,
-.projects,
-.goals,
-.contact {
+section {
+  //section: about skills project goals contact
   background-color: $white-color;
   border-bottom: 2px solid $primary-color;
   border-radius: 5px;
