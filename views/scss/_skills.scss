@@ -9,6 +9,12 @@
     }
     &-content {
       background-color: $technicalSkills;
+
+      .programming-languages-heading__text,
+      .frameworks-heading__text,
+      .version-control-heading__text {
+        text-align: center;
+      }
     }
   }
 
@@ -27,8 +33,14 @@
   //Start softSkills content
   .softSkills-content {
     display: flex;
-    flex-flow: column;
-    flex: 0 1 50%;
+    flex-wrap: wrap;
+    .languages,
+    .sports,
+    .teamwork,
+    .creativity {
+      @include flex(row, center, flex-start, wrap);
+      flex: 1 0 50%;
+    }
   }
   //End softSkills content
 

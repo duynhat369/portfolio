@@ -84,6 +84,7 @@ video {
   border: 0;
   font-size: 100%;
   font-family: "Inconsolata", monospace;
+  // font-family: 'Raleway', sans-serif;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -221,6 +222,16 @@ h1 {
 }
 
 //light color
+.about-heading-des,
+.about-content-text__heading,
+.about-content-text__des,
+.skills-heading-des,
+.projects-heading-des,
+.goals-heading-des,
+.contact-heading-des {
+  color: $text-light-color;
+  letter-spacing: 1px;
+}
 
 //start css same between tag
 .about-heading,
@@ -234,17 +245,6 @@ h1 {
     text-align: center;
     line-height: 1.3;
   }
-}
-
-.about-heading-des,
-.about-content-text__heading,
-.about-content-text__des,
-.skills-heading-des,
-.projects-heading-des,
-.goals-heading-des,
-.contact-heading-des {
-  color: $text-light-color;
-  letter-spacing: 1px;
 }
 
 .about-heading-text,

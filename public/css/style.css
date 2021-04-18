@@ -226,6 +226,17 @@ h1 {
   color: #585858;
 }
 
+.about-heading-des,
+.about-content-text__heading,
+.about-content-text__des,
+.skills-heading-des,
+.projects-heading-des,
+.goals-heading-des,
+.contact-heading-des {
+  color: #686868;
+  letter-spacing: 1px;
+}
+
 .about-heading,
 .about-content-text,
 .skills-heading,
@@ -246,17 +257,6 @@ h1 {
 .contact-heading-des {
   text-align: center;
   line-height: 1.3;
-}
-
-.about-heading-des,
-.about-content-text__heading,
-.about-content-text__des,
-.skills-heading-des,
-.projects-heading-des,
-.goals-heading-des,
-.contact-heading-des {
-  color: #686868;
-  letter-spacing: 1px;
 }
 
 .about-heading-text,
@@ -331,8 +331,11 @@ section {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: nowrap;
+}
+.navigator-author-text {
+  text-align: center;
 }
 .navigator-author-position {
   font-size: 0.8rem;
@@ -464,6 +467,11 @@ section {
 .skills .technicalSkills-content {
   background-color: #e0c78b;
 }
+.skills .technicalSkills-content .programming-languages-heading__text,
+.skills .technicalSkills-content .frameworks-heading__text,
+.skills .technicalSkills-content .version-control-heading__text {
+  text-align: center;
+}
 .skills .softSkills-heading-text {
   background-color: #aec785;
   color: white;
@@ -473,8 +481,18 @@ section {
 }
 .skills .softSkills-content {
   display: flex;
-  flex-flow: column;
-  flex: 0 1 50%;
+  flex-wrap: wrap;
+}
+.skills .softSkills-content .languages,
+.skills .softSkills-content .sports,
+.skills .softSkills-content .teamwork,
+.skills .softSkills-content .creativity {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 0 50%;
 }
 .skills .programming-languages-heading,
 .skills .frameworks-heading,
@@ -683,6 +701,7 @@ section {
   width: calc(100% - 100px);
   float: right;
   color: #686868;
+  letter-spacing: 1px;
 }
 .goals .goals-item .goal-content {
   border: 1px solid #f1f2f7;
@@ -745,7 +764,7 @@ section {
   display: flex;
   flex-flow: column;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: nowrap;
 }
 .contact-info-list li {
@@ -766,7 +785,7 @@ section {
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: nowrap;
 }
 .contact-social-items li {
@@ -801,6 +820,10 @@ section {
 }
 .contact-social-items li .instagram {
   background-color: #26533c;
+}
+.contact-maps .address-google {
+  border: 2px solid #cc635b;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

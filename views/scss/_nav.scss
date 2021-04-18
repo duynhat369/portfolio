@@ -20,7 +20,11 @@
   &-author {
     position: relative;
     width: 100%;
-    @include flex(column, center, space-around, nowrap);
+    @include flex(column, center, center, nowrap);
+    &-text {
+      text-align: center;
+    }
+
     &-position {
       font-size: 0.8rem;
     }
