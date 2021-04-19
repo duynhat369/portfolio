@@ -808,6 +808,7 @@ section {
   background-color: white;
   padding-bottom: 0.5rem;
   color: #cc635b;
+  border: 1px solid #cc635b;
 }
 .contact-social-items li .facebook {
   background-color: #0055c5;
