@@ -1,9 +1,46 @@
 //about css
 .about {
   &-image {
+    position: relative;
     img {
       width: 100%;
-      border-radius: 5px;
+      height: 100%;
+    }
+    &::before {
+      //border top custom
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 90%;
+      border: 1px solid $primary-color;
+    }
+    &::after {
+      //border bottom custom
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 90%;
+      border: 1px solid $primary-color;
+    }
+    &-border {
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 90%;
+        border: 1px solid $primary-color;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        height: 90%;
+        border: 1px solid $primary-color;
+      }
     }
   }
   .about-content {
