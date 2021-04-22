@@ -1,12 +1,22 @@
+.nav-mobile-checkbox:checked ~ .navigator-mobile {
+  transform: translateX(0%);
+}
+.nav-mobile-checkbox:checked ~ .overlay {
+  display: block;
+}
 .navigator-mobile {
-  transform: translateX(-100%);
-  background-color: $primary-color;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+
   width: 320px;
+  z-index: 9999;
   max-width: 100%;
+  
+  background-color: $primary-color;
+  transform: translateX(-100%);
+  transition: transform linear 0.3s;
   .icon-close {
     width: 100%;
     height: 15px;
