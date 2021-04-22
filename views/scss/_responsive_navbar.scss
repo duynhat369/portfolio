@@ -1,0 +1,13 @@
+@media (max-width: 1199.98px) {
+  .page {
+    .navigator {
+      display: none;
+    }
+    .navbar-burger {
+      display: block;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+  }
+}

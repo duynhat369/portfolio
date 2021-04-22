@@ -1,4 +1,4 @@
-//Start about css 
+//Start about css
 .about {
   &-image {
     position: relative;
@@ -13,7 +13,15 @@
       top: 0;
       right: 0;
       width: 90%;
-      border: 1px solid $primary-color;
+      border: 1px solid transparent;
+      border-image: linear-gradient(
+          to left,
+          $primary-color,
+          $softSKills,
+          rgba(0, 0, 0, 0)
+        )
+        1 100%;
+      border-image-slice: 1;
     }
     &::after {
       //border bottom custom
@@ -22,7 +30,16 @@
       bottom: 0;
       left: 0;
       width: 90%;
-      border: 1px solid $primary-color;
+      border: 1px solid transparent;
+
+      border-image: linear-gradient(
+          to right,
+          $primary-color,
+          $softSKills,
+          rgba(0, 0, 0, 0)
+        )
+        1 100%;
+      border-image-slice: 1;
     }
     &-border {
       &::before {
@@ -31,7 +48,16 @@
         top: 0;
         left: 0;
         height: 90%;
-        border: 1px solid $primary-color;
+        border: 1px solid transparent;
+
+        border-image: linear-gradient(
+            to bottom,
+            $primary-color,
+            $softSKills,
+            rgba(0, 0, 0, 0)
+          )
+          1 100%;
+        border-image-slice: 1;
       }
       &::after {
         position: absolute;
@@ -39,7 +65,16 @@
         bottom: 0;
         right: 0;
         height: 90%;
-        border: 1px solid $primary-color;
+        border: 1px solid transparent;
+
+        border-image: linear-gradient(
+            to top,
+            $primary-color,
+            $softSKills,
+            rgba(0, 0, 0, 0)
+          )
+          1 100%;
+        border-image-slice: 1;
       }
     }
   }
