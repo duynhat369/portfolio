@@ -1,8 +1,10 @@
 .page {
   position: relative;
+  background-color: $background-color;
   .nav-burger {
     display: none;
     position: absolute;
+    border-radius: 5px;
     top: 0;
     left: 0;
     width: 30px;

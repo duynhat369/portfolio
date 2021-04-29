@@ -1,87 +1,29 @@
 //Start about css
 .about {
-  &-image {
-    position: relative;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    &::before {
-      //border top custom
-      position: absolute;
-      content: "";
-      top: 0;
-      right: 0;
-      width: 90%;
-      border: 1px solid transparent;
-      border-image: linear-gradient(
-          to left,
-          $primary-color,
-          $softSKills,
-          rgba(0, 0, 0, 0)
-        )
-        1 100%;
-      border-image-slice: 1;
-    }
-    &::after {
-      //border bottom custom
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 90%;
-      border: 1px solid transparent;
-
-      border-image: linear-gradient(
-          to right,
-          $primary-color,
-          $softSKills,
-          rgba(0, 0, 0, 0)
-        )
-        1 100%;
-      border-image-slice: 1;
-    }
-    &-border {
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        height: 90%;
-        border: 1px solid transparent;
-
-        border-image: linear-gradient(
-            to bottom,
-            $primary-color,
-            $softSKills,
-            rgba(0, 0, 0, 0)
-          )
-          1 100%;
-        border-image-slice: 1;
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        right: 0;
-        height: 90%;
-        border: 1px solid transparent;
-
-        border-image: linear-gradient(
-            to top,
-            $primary-color,
-            $softSKills,
-            rgba(0, 0, 0, 0)
-          )
-          1 100%;
-        border-image-slice: 1;
+  &-summary {
+    &-image {
+      width: 50%;
+      height: 400px;
+      padding: 0 15px;
+      object-fit: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        background-color: $primary-color;
       }
     }
-  }
-  .about-content {
-    &-text {
-      &__des {
-        letter-spacing: 1px;
+    .about-content {
+      box-shadow: 2px 2px 40px $shadow-color;
+      position: relative;
+      padding: 0 15px;
+      margin-left: 40%;
+      width: 60%;
+      top: 2rem;
+      background: $white-color;
+      &-text {
+        &__des {
+          letter-spacing: 1px;
+        }
       }
     }
   }
