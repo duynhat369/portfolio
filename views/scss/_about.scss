@@ -2,9 +2,8 @@
 .about {
   &-summary {
     &-image {
-      width: 50%;
+      width: 45%;
       height: 400px;
-      padding: 0 15px;
       object-fit: cover;
       img {
         width: 100%;
@@ -16,9 +15,9 @@
       box-shadow: 2px 2px 40px $shadow-color;
       position: relative;
       padding: 0 15px;
-      margin-left: 40%;
-      width: 60%;
-      top: 2rem;
+      margin-left: 37%;
+      width: 63%;
+      top: 3rem;
       background: $white-color;
       &-text {
         &__des {

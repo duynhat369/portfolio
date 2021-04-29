@@ -496,9 +496,8 @@ section {
 }
 
 .about-summary-image {
-  width: 50%;
+  width: 45%;
   height: 400px;
-  padding: 0 15px;
   object-fit: cover;
 }
 .about-summary-image img {
@@ -510,9 +509,9 @@ section {
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);
   position: relative;
   padding: 0 15px;
-  margin-left: 40%;
-  width: 60%;
-  top: 2rem;
+  margin-left: 37%;
+  width: 63%;
+  top: 3rem;
   background: white;
 }
 .about-summary .about-content-text__des {
