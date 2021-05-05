@@ -8,12 +8,26 @@
       }
     }
     &-content {
-      background-color: $technicalSkills;
+      @include flex(column, center, flex-start, wrap);
 
-      .programming-languages-heading__text,
-      .frameworks-heading__text,
-      .version-control-heading__text {
-        text-align: center;
+      text-align: center;
+      &-icon {
+        @include flex(column, center, center, wrap);
+        background-color: $white-color;
+        box-shadow: 2px 2px 40px $shadow-color;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        & i {
+          color: red;
+          font-size: 3rem;
+        }
+      }
+      &-heading {
+        color: $text-black-color;
+      }
+      &-des {
+        color: $text-light-color;
       }
     }
   }

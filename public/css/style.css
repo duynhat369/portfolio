@@ -524,12 +524,34 @@ section {
   color: white;
 }
 .skills .technicalSkills-content {
-  background-color: #e0c78b;
-}
-.skills .technicalSkills-content .programming-languages-heading__text,
-.skills .technicalSkills-content .frameworks-heading__text,
-.skills .technicalSkills-content .version-control-heading__text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   text-align: center;
+}
+.skills .technicalSkills-content-icon {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.skills .technicalSkills-content-icon i {
+  color: red;
+  font-size: 3rem;
+}
+.skills .technicalSkills-content-heading {
+  color: #585858;
+}
+.skills .technicalSkills-content-des {
+  color: #686868;
 }
 .skills .softSkills-heading-text {
   background-color: #aec785;
@@ -748,7 +770,7 @@ section {
   letter-spacing: 1px;
 }
 
-.projects .projects-silde-title {
+.projects .projects-slide-title {
   color: white;
 }
 
