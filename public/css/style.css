@@ -520,10 +520,17 @@ section {
 }
 
 .skills .technicalSkills-heading-text {
-  background-color: #e0c78b;
+  background-color: #cc635b;
   color: white;
 }
-.skills .technicalSkills-content {
+.skills .softSkills-heading-text {
+  background-color: #cc635b;
+  color: white;
+}
+.skills .softSkills-content {
+  background-color: #cc635b;
+}
+.skills .skill-content {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -531,7 +538,7 @@ section {
   flex-wrap: wrap;
   text-align: center;
 }
-.skills .technicalSkills-content-icon {
+.skills .skill-content-icon {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -543,231 +550,54 @@ section {
   height: 75px;
   border-radius: 50%;
 }
-.skills .technicalSkills-content-icon i {
-  color: red;
+.skills .skill-content-icon i {
   font-size: 3rem;
 }
-.skills .technicalSkills-content-heading {
+.skills .skill-content-heading {
   color: #585858;
 }
-.skills .technicalSkills-content-des {
+.skills .skill-content-des {
   color: #686868;
 }
-.skills .softSkills-heading-text {
-  background-color: #aec785;
-  color: white;
+.skills .skill-content .html5-icon i {
+  background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), #ff3300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .softSkills-content {
-  background-color: #aec785;
+.skills .skill-content .javascript i {
+  background: -webkit-linear-gradient(rgba(255, 196, 0, 0.1), #ffee00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .softSkills-content {
-  display: flex;
-  flex-wrap: wrap;
+.skills .skill-content .react i {
+  background: -webkit-linear-gradient(rgba(0, 247, 255, 0.1), #00f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .softSkills-content .languages,
-.skills .softSkills-content .sports,
-.skills .softSkills-content .teamwork,
-.skills .softSkills-content .creativity {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex: 1 0 50%;
+.skills .skill-content .bootstrap4 i {
+  background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), #ff3300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .programming-languages-heading,
-.skills .frameworks-heading,
-.skills .version-control-heading,
-.skills .languages-heading,
-.skills .sports-heading,
-.skills .teamwork-heading,
-.skills .creativity-heading {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: start;
-  flex-wrap: nowrap;
+.skills .skill-content .github i {
+  background: -webkit-linear-gradient(rgba(132, 0, 255, 0.1), #8400ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .programming-languages-heading__text,
-.skills .frameworks-heading__text,
-.skills .version-control-heading__text,
-.skills .languages-heading__text,
-.skills .sports-heading__text,
-.skills .teamwork-heading__text,
-.skills .creativity-heading__text {
-  color: white;
-  position: relative;
-  letter-spacing: 2px;
+.skills .skill-content .vscode i {
+  background: -webkit-linear-gradient(rgba(20, 245, 0, 0.1), #14f500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .programming-languages-heading__text::after,
-.skills .frameworks-heading__text::after,
-.skills .version-control-heading__text::after,
-.skills .languages-heading__text::after,
-.skills .sports-heading__text::after,
-.skills .teamwork-heading__text::after,
-.skills .creativity-heading__text::after {
-  border-bottom: 2px solid white;
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  transform: translate(50%, 50%);
+.skills .skill-content .foreign-language i {
+  background: -webkit-linear-gradient(rgba(0, 247, 255, 0.1), #00f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .programming-languages-heading__icon i,
-.skills .frameworks-heading__icon i,
-.skills .version-control-heading__icon i,
-.skills .languages-heading__icon i,
-.skills .sports-heading__icon i,
-.skills .teamwork-heading__icon i,
-.skills .creativity-heading__icon i {
-  font-size: 1.6rem;
-  color: white;
-}
-.skills .programming-languages .html-content__title,
-.skills .programming-languages .javascript-content__title,
-.skills .programming-languages .bootstrap-content__title,
-.skills .programming-languages .react-content__title,
-.skills .programming-languages .sass-content__title,
-.skills .programming-languages .github-content__title,
-.skills .programming-languages .languages-content__title,
-.skills .programming-languages .sports-content__title,
-.skills .programming-languages .teamwork-content__title,
-.skills .programming-languages .creativity-content__title,
-.skills .frameworks .html-content__title,
-.skills .frameworks .javascript-content__title,
-.skills .frameworks .bootstrap-content__title,
-.skills .frameworks .react-content__title,
-.skills .frameworks .sass-content__title,
-.skills .frameworks .github-content__title,
-.skills .frameworks .languages-content__title,
-.skills .frameworks .sports-content__title,
-.skills .frameworks .teamwork-content__title,
-.skills .frameworks .creativity-content__title,
-.skills .version-control .html-content__title,
-.skills .version-control .javascript-content__title,
-.skills .version-control .bootstrap-content__title,
-.skills .version-control .react-content__title,
-.skills .version-control .sass-content__title,
-.skills .version-control .github-content__title,
-.skills .version-control .languages-content__title,
-.skills .version-control .sports-content__title,
-.skills .version-control .teamwork-content__title,
-.skills .version-control .creativity-content__title,
-.skills .languages .html-content__title,
-.skills .languages .javascript-content__title,
-.skills .languages .bootstrap-content__title,
-.skills .languages .react-content__title,
-.skills .languages .sass-content__title,
-.skills .languages .github-content__title,
-.skills .languages .languages-content__title,
-.skills .languages .sports-content__title,
-.skills .languages .teamwork-content__title,
-.skills .languages .creativity-content__title,
-.skills .sports .html-content__title,
-.skills .sports .javascript-content__title,
-.skills .sports .bootstrap-content__title,
-.skills .sports .react-content__title,
-.skills .sports .sass-content__title,
-.skills .sports .github-content__title,
-.skills .sports .languages-content__title,
-.skills .sports .sports-content__title,
-.skills .sports .teamwork-content__title,
-.skills .sports .creativity-content__title,
-.skills .teamwork .html-content__title,
-.skills .teamwork .javascript-content__title,
-.skills .teamwork .bootstrap-content__title,
-.skills .teamwork .react-content__title,
-.skills .teamwork .sass-content__title,
-.skills .teamwork .github-content__title,
-.skills .teamwork .languages-content__title,
-.skills .teamwork .sports-content__title,
-.skills .teamwork .teamwork-content__title,
-.skills .teamwork .creativity-content__title,
-.skills .creativity .html-content__title,
-.skills .creativity .javascript-content__title,
-.skills .creativity .bootstrap-content__title,
-.skills .creativity .react-content__title,
-.skills .creativity .sass-content__title,
-.skills .creativity .github-content__title,
-.skills .creativity .languages-content__title,
-.skills .creativity .sports-content__title,
-.skills .creativity .teamwork-content__title,
-.skills .creativity .creativity-content__title {
-  letter-spacing: 2px;
-}
-.skills .programming-languages .html-content__detail,
-.skills .programming-languages .javascript-content__detail,
-.skills .programming-languages .bootstrap-content__detail,
-.skills .programming-languages .react-content__detail,
-.skills .programming-languages .sass-content__detail,
-.skills .programming-languages .github-content__detail,
-.skills .programming-languages .languages-content__detail,
-.skills .programming-languages .sports-content__detail,
-.skills .programming-languages .teamwork-content__detail,
-.skills .programming-languages .creativity-content__detail,
-.skills .frameworks .html-content__detail,
-.skills .frameworks .javascript-content__detail,
-.skills .frameworks .bootstrap-content__detail,
-.skills .frameworks .react-content__detail,
-.skills .frameworks .sass-content__detail,
-.skills .frameworks .github-content__detail,
-.skills .frameworks .languages-content__detail,
-.skills .frameworks .sports-content__detail,
-.skills .frameworks .teamwork-content__detail,
-.skills .frameworks .creativity-content__detail,
-.skills .version-control .html-content__detail,
-.skills .version-control .javascript-content__detail,
-.skills .version-control .bootstrap-content__detail,
-.skills .version-control .react-content__detail,
-.skills .version-control .sass-content__detail,
-.skills .version-control .github-content__detail,
-.skills .version-control .languages-content__detail,
-.skills .version-control .sports-content__detail,
-.skills .version-control .teamwork-content__detail,
-.skills .version-control .creativity-content__detail,
-.skills .languages .html-content__detail,
-.skills .languages .javascript-content__detail,
-.skills .languages .bootstrap-content__detail,
-.skills .languages .react-content__detail,
-.skills .languages .sass-content__detail,
-.skills .languages .github-content__detail,
-.skills .languages .languages-content__detail,
-.skills .languages .sports-content__detail,
-.skills .languages .teamwork-content__detail,
-.skills .languages .creativity-content__detail,
-.skills .sports .html-content__detail,
-.skills .sports .javascript-content__detail,
-.skills .sports .bootstrap-content__detail,
-.skills .sports .react-content__detail,
-.skills .sports .sass-content__detail,
-.skills .sports .github-content__detail,
-.skills .sports .languages-content__detail,
-.skills .sports .sports-content__detail,
-.skills .sports .teamwork-content__detail,
-.skills .sports .creativity-content__detail,
-.skills .teamwork .html-content__detail,
-.skills .teamwork .javascript-content__detail,
-.skills .teamwork .bootstrap-content__detail,
-.skills .teamwork .react-content__detail,
-.skills .teamwork .sass-content__detail,
-.skills .teamwork .github-content__detail,
-.skills .teamwork .languages-content__detail,
-.skills .teamwork .sports-content__detail,
-.skills .teamwork .teamwork-content__detail,
-.skills .teamwork .creativity-content__detail,
-.skills .creativity .html-content__detail,
-.skills .creativity .javascript-content__detail,
-.skills .creativity .bootstrap-content__detail,
-.skills .creativity .react-content__detail,
-.skills .creativity .sass-content__detail,
-.skills .creativity .github-content__detail,
-.skills .creativity .languages-content__detail,
-.skills .creativity .sports-content__detail,
-.skills .creativity .teamwork-content__detail,
-.skills .creativity .creativity-content__detail {
-  letter-spacing: 1px;
+.skills .skill-content .teamwork i {
+  background: -webkit-linear-gradient(rgba(132, 0, 255, 0.1), #8400ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .projects .projects-slide-title {
