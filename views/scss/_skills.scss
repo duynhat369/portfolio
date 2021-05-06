@@ -3,31 +3,8 @@
   .technicalSkills {
     &-heading {
       &-text {
-        background-color: $technicalSkills;
+        background-color: $primary-color;
         color: $white-color;
-      }
-    }
-    &-content {
-      @include flex(column, center, flex-start, wrap);
-
-      text-align: center;
-      &-icon {
-        @include flex(column, center, center, wrap);
-        background-color: $white-color;
-        box-shadow: 2px 2px 40px $shadow-color;
-        width: 75px;
-        height: 75px;
-        border-radius: 50%;
-        & i {
-          color: red;
-          font-size: 3rem;
-        }
-      }
-      &-heading {
-        color: $text-black-color;
-      }
-      &-des {
-        color: $text-light-color;
       }
     }
   }
@@ -35,80 +12,100 @@
   .softSkills {
     &-heading {
       &-text {
-        background-color: $softSKills;
+        background-color: $primary-color;
         color: $white-color;
       }
     }
     &-content {
-      background-color: $softSKills;
+      background-color: $primary-color;
     }
   }
 
-  //Start softSkills content
-  .softSkills-content {
-    display: flex;
-    flex-wrap: wrap;
-    .languages,
-    .sports,
-    .teamwork,
-    .creativity {
-      @include flex(row, center, flex-start, wrap);
-      flex: 1 0 50%;
-    }
-  }
-  //End softSkills content
+  .skill-content {
+    @include flex(column, center, flex-start, wrap);
 
-  //technical skills and soft skills (class con có tên giống nhau có thể css chung)
-  .programming-languages,
-  .frameworks,
-  .version-control,
-  .languages,
-  .sports,
-  .teamwork,
-  .creativity {
+    text-align: center;
+    &-icon {
+      @include flex(column, center, center, wrap);
+      background-color: $white-color;
+      box-shadow: 2px 2px 40px $shadow-color;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      & i {
+        font-size: 3rem;
+      }
+    }
     &-heading {
-      @include flex(row, center, start, nowrap);
-
-      &__text {
-        color: $white-color;
-        position: relative;
-        letter-spacing: 2px;
-        &::after {
-          border-bottom: 2px solid $white-color;
-          content: "";
-          position: absolute;
-          width: 50%;
-          height: 0;
-          bottom: 0;
-          left: 0;
-          transform: translate(50%, 50%);
-        }
-      }
-      &__icon i {
-        font-size: 1.6rem;
-        color: $white-color;
-      }
+      color: $text-black-color;
+    }
+    &-des {
+      color: $text-light-color;
     }
 
-    .html,
-    .javascript,
-    .bootstrap,
-    .react,
-    .sass,
-    .github,
-    .languages,
-    .sports,
-    .teamwork,
-    .creativity {
-      &-content {
-        &__title {
-          letter-spacing: 2px;
-        }
-
-        &__detail {
-          letter-spacing: 1px;
-        }
-      }
+    .html5-icon i {
+      background: -webkit-linear-gradient(
+        rgba(255, 51, 0, 0.1),
+        rgb(255, 51, 0)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .javascript i {
+      background: -webkit-linear-gradient(
+        rgba(255, 196, 0, 0.1),
+        rgb(255, 238, 0)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .react i {
+      background: -webkit-linear-gradient(
+        rgba(0, 247, 255, 0.1),
+        rgb(0, 247, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bootstrap4 i {
+      background: -webkit-linear-gradient(
+        rgba(255, 51, 0, 0.1),
+        rgb(255, 51, 0)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .github i {
+      background: -webkit-linear-gradient(
+        rgba(132, 0, 255, 0.1),
+        rgb(132, 0, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .vscode i {
+      background: -webkit-linear-gradient(
+        rgba(20, 245, 0, 0.1),
+        rgb(20, 245, 0)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .foreign-language i {
+      background: -webkit-linear-gradient(
+        rgba(0, 247, 255, 0.1),
+        rgb(0, 247, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .teamwork i {
+      background: -webkit-linear-gradient(
+        rgba(132, 0, 255, 0.1),
+        rgb(132, 0, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
