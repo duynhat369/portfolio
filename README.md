@@ -7,3 +7,5 @@
 ### 5. Check UI UX last time
 
 ### 6. Github domain or vercel domain
+
+### 8. Delete class name invalid
