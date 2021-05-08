@@ -196,7 +196,7 @@ h3 {
 }
 
 h5 {
-  font-size: 1.2;
+  font-size: 1.4rem;
 }
 
 small {
@@ -229,16 +229,16 @@ small {
 }
 
 .fill-btn {
-  background-color: #cc635b;
-  color: white;
-  transition: 0.5s ease;
-  font-weight: 700;
-  border-radius: 0;
-}
-.fill-btn:hover {
   background-color: white;
   color: #cc635b;
+  font-weight: 700;
+  border-radius: 0;
+  transition: 0.5s ease;
   border: 1px solid #cc635b;
+}
+.fill-btn:hover {
+  background-color: #cc635b;
+  color: white;
 }
 
 .bold-text,
@@ -364,7 +364,7 @@ section {
   text-align: center;
 }
 .navigator-author-position {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .navigator-items {
   width: 100%;
@@ -524,56 +524,71 @@ section {
   flex-wrap: wrap;
   background-color: white;
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 .skills .skill-content-icon i {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
-.skills .skill-content-heading {
+.skills .skill-content-text-heading {
   color: #585858;
 }
-.skills .skill-content-des {
+.skills .skill-content-text-des {
+  width: 100%;
   color: #686868;
 }
-.skills .skill-content .html5-icon i {
+.skills .skill-content-text-des .list-skill {
+  list-style-type: circle;
+  text-align: left;
+}
+.skills .html5-icon i {
   background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), #ff3300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .javascript i {
-  background: -webkit-linear-gradient(rgba(255, 196, 0, 0.1), #ffee00);
+.skills .javascript i {
+  background: -webkit-linear-gradient(rgba(255, 218, 9, 0.1), #ffda09);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .react i {
+.skills .react i {
   background: -webkit-linear-gradient(rgba(0, 247, 255, 0.1), #00f7ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .bootstrap4 i {
+.skills .bootstrap4 i {
   background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), #ff3300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .github i {
-  background: -webkit-linear-gradient(rgba(132, 0, 255, 0.1), #8400ff);
+.skills .github i {
+  background: -webkit-linear-gradient(rgba(204, 0, 255, 0.1), #cc00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .vscode i {
+.skills .text-editor i {
   background: -webkit-linear-gradient(rgba(20, 245, 0, 0.1), #14f500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .foreign-language i {
+.skills .foreign-language i {
   background: -webkit-linear-gradient(rgba(0, 247, 255, 0.1), #00f7ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .skill-content .teamwork i {
+.skills .teamwork i {
   background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), #ff3300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills .design-thinking i {
+  background: -webkit-linear-gradient(rgba(255, 218, 9, 0.1), #ffda09);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills .sports i {
+  background: -webkit-linear-gradient(rgba(20, 245, 0, 0.1), #14f500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
