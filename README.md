@@ -1,6 +1,8 @@
 ### 1. Complete English content
 
-### 2. Complete responsive navbar
+### 2. Complete responsive navbar: 
+  ### Scrolling pages are not allowed when the burger is active
+  ### Zoom the screen in and out, then remove the active burger
 
 ### 3. Responsive for all sections
 
