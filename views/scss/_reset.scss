@@ -181,15 +181,16 @@ small {
   position: absolute;
 }
 
-.btn-style {
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
+.fill-btn {
   background-color: $primary-color;
   color: $white-color;
   transition: 0.5s ease;
   font-weight: 700;
+  border-radius: 0;
   &:hover {
-    opacity: 0.8;
+    background-color: $white-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
   }
 }
 
@@ -208,23 +209,6 @@ h1 {
   color: $white-color;
 }
 
-//black color
-.html-content,
-.javascript-content,
-.bootstrap-content,
-.react-content,
-.sass-content,
-.github-content,
-.softSkills-heading-des,
-.technicalSkills-heading-des,
-.contact-info-item,
-.languages-content__detail,
-.sports-content__detail,
-.teamwork-content__detail,
-.creativity-content__detail {
-  color: $text-black-color;
-}
-
 //light color
 .about-heading-des,
 .about-content-text__heading,
@@ -232,9 +216,9 @@ h1 {
 .skills-heading-des,
 .projects-heading-des,
 .goals-heading-des,
-.contact-heading-des {
+.contact-heading-des,
+.technicalSkills-heading-des {
   color: $text-light-color;
-  letter-spacing: 1px;
 }
 
 //start css same between tag
@@ -257,7 +241,6 @@ h1 {
 .goals-heading-text,
 .contact-heading-text {
   color: $text-black-color;
-  letter-spacing: 2px;
   text-align: center;
   position: relative;
 }
@@ -292,8 +275,7 @@ section {
 .softSkills-heading-text {
   display: inline-block;
   background-color: $primary-color;
-  color: $background-color;
+  color: $white-color;
   box-shadow: -2px 4px 4px $text-light-color;
-  letter-spacing: 2px;
 }
 //End css same between heading h3 tag

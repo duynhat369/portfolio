@@ -1,26 +1,5 @@
 //Start skills css
 .skills {
-  .technicalSkills {
-    &-heading {
-      &-text {
-        background-color: $primary-color;
-        color: $white-color;
-      }
-    }
-  }
-
-  .softSkills {
-    &-heading {
-      &-text {
-        background-color: $primary-color;
-        color: $white-color;
-      }
-    }
-    &-content {
-      background-color: $primary-color;
-    }
-  }
-
   .skill-content {
     @include flex(column, center, flex-start, wrap);
 
@@ -101,8 +80,8 @@
     }
     .teamwork i {
       background: -webkit-linear-gradient(
-        rgba(132, 0, 255, 0.1),
-        rgb(132, 0, 255)
+        rgba(255, 51, 0, 0.1),
+        rgb(255, 51, 0)
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

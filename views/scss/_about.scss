@@ -1,5 +1,11 @@
 //Start about css
 .about {
+  &-heading-des {
+    &::before{
+      content: "";
+    }
+  }
+
   &-summary {
     &-image {
       width: 45%;
@@ -20,9 +26,15 @@
       width: 63%;
       top: 3rem;
       background: $white-color;
+      &-text__des {
+        .textColor {
+          color: $primary-color;
+        }
+      }
+
       &-text {
-        &__des {
-          letter-spacing: 1px;
+        &__button {
+          width: 100%;
         }
       }
     }
