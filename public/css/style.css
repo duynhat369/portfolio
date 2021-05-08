@@ -228,16 +228,17 @@ small {
   position: absolute;
 }
 
-.btn-style {
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
+.fill-btn {
   background-color: #cc635b;
   color: white;
   transition: 0.5s ease;
   font-weight: 700;
+  border-radius: 0;
 }
-.btn-style:hover {
-  opacity: 0.8;
+.fill-btn:hover {
+  background-color: white;
+  color: #cc635b;
+  border: 1px solid #cc635b;
 }
 
 .bold-text,
@@ -253,31 +254,15 @@ h1 {
   color: white;
 }
 
-.html-content,
-.javascript-content,
-.bootstrap-content,
-.react-content,
-.sass-content,
-.github-content,
-.softSkills-heading-des,
-.technicalSkills-heading-des,
-.contact-info-item,
-.languages-content__detail,
-.sports-content__detail,
-.teamwork-content__detail,
-.creativity-content__detail {
-  color: #585858;
-}
-
 .about-heading-des,
 .about-content-text__heading,
 .about-content-text__des,
 .skills-heading-des,
 .projects-heading-des,
 .goals-heading-des,
-.contact-heading-des {
+.contact-heading-des,
+.technicalSkills-heading-des {
   color: #686868;
-  letter-spacing: 1px;
 }
 
 .about-heading,
@@ -308,7 +293,6 @@ h1 {
 .goals-heading-text,
 .contact-heading-text {
   color: #585858;
-  letter-spacing: 2px;
   text-align: center;
   position: relative;
 }
@@ -338,9 +322,8 @@ section {
 .softSkills-heading-text {
   display: inline-block;
   background-color: #cc635b;
-  color: #f1f2f7;
+  color: white;
   box-shadow: -2px 4px 4px #686868;
-  letter-spacing: 2px;
 }
 
 .navigator {
@@ -495,6 +478,9 @@ section {
   flex-wrap: nowrap;
 }
 
+.about-heading-des::before {
+  content: "";
+}
 .about-summary-image {
   width: 45%;
   height: 400px;
@@ -515,21 +501,13 @@ section {
   top: 3rem;
   background: white;
 }
-.about-summary .about-content-text__des {
-  letter-spacing: 1px;
+.about-summary .about-content-text__des .textColor {
+  color: #cc635b;
+}
+.about-summary .about-content-text__button {
+  width: 100%;
 }
 
-.skills .technicalSkills-heading-text {
-  background-color: #cc635b;
-  color: white;
-}
-.skills .softSkills-heading-text {
-  background-color: #cc635b;
-  color: white;
-}
-.skills .softSkills-content {
-  background-color: #cc635b;
-}
 .skills .skill-content {
   display: flex;
   flex-flow: column;
@@ -595,7 +573,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 .skills .skill-content .teamwork i {
-  background: -webkit-linear-gradient(rgba(132, 0, 255, 0.1), #8400ff);
+  background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), #ff3300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -612,7 +590,6 @@ section {
   width: calc(100% - 100px);
   float: right;
   color: #686868;
-  letter-spacing: 1px;
 }
 .goals .goals-item .goal-content {
   border: 1px solid #f1f2f7;
