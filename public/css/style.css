@@ -520,16 +520,18 @@ section {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: absolute;
   top: 0;
   background-color: transparent;
 }
 .skills .skill-content-icon i {
   font-size: 2.5rem;
-  background: -webkit-linear-gradient(#585858, #585858);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #585858;
+}
+.skills .skill-content-icon .fa-react,
+.skills .skill-content-icon .fa-think-peaks {
+  font-weight: bold;
 }
 .skills .skill-content-text {
   width: 70%;
