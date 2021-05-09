@@ -1,8 +1,8 @@
 $primary-color: rgb(204, 99, 91);
-$primary-opacity: rgb(204, 99, 91, .2);
+$primary-opacity: rgb(204, 99, 91, 0.2);
 $white-color: rgb(255, 255, 255);
 $background-color: rgb(241, 242, 247);
-$shadow-color: rgba(0, 0, 0, .1);
+$shadow-color: rgba(0, 0, 0, 0.1);
 $text-light-color: rgb(104, 104, 104);
 $text-black-color: rgb(88, 88, 88);
 $facebook: rgb(0, 85, 197);
@@ -10,19 +10,6 @@ $linked: rgb(0, 65, 130);
 $github: rgb(73, 65, 65);
 $instagram: rgb(38, 83, 60);
 $technicalSkills: rgb(224, 199, 139);
-$technicalSkills-opacity: rgb(224, 199, 139, .2);
+$technicalSkills-opacity: rgb(224, 199, 139, 0.2);
 $softSKills: rgb(174, 199, 133);
-$softSKills-opacity: rgb(174, 199, 133, .2);
-
-@mixin flex(
-  $flow: column,
-  $align: flex-start,
-  $justify: flex-start,
-  $wrap: nowrap
-) {
-  display: flex;
-  flex-flow: $flow;
-  align-items: $align;
-  justify-content: $justify;
-  flex-wrap: $wrap;
-}
+$softSKills-opacity: rgb(174, 199, 133, 0.2);

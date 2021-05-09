@@ -86,7 +86,6 @@
 
   &-link {
     width: 100%;
-    border-bottom: 1px solid $text-black-color;
     &-social {
       @include flex(row, center, center, nowrap);
       li {
@@ -117,13 +116,6 @@
           background-color: $instagram;
         }
       }
-    }
-  }
-  &-copyright {
-    width: 100%;
-    .since {
-      width: 100%;
-      @include flex(row, center, center, nowrap);
     }
   }
 }

@@ -141,10 +141,12 @@ p {
 
 h1 {
   font-size: 2rem;
+  @extend %bold-text;
 }
 
 h3 {
   font-size: 1.6rem;
+  @extend %bold-text;
 }
 
 h5 {
@@ -156,57 +158,12 @@ small {
 }
 /* end font size tag */
 
-//start class behind class (override attributes)
-.text-shadow {
-  text-shadow: -2px 4px 4px $text-light-color;
-}
-
-.column-padding0 {
-  padding: 0;
-}
-
-.column-pl0 {
-  padding-left: 0;
-}
-
-.column-pr0 {
-  padding-right: 0;
-}
-
-.pos-relative {
-  position: relative;
-}
-
-.pos-absolute {
-  position: absolute;
-}
-
-.fill-btn {
-  background-color: $white-color;
-  color: $primary-color;
-  font-weight: 700;
-  border-radius: 0;
-  transition: 0.5s ease;
-  border: 1px solid $primary-color;
-  &:hover {
-    background-color: $primary-color;
-    color: $white-color;
-  }
-}
-
-.bold-text,
-h3,
-h1 {
-  font-weight: 700;
-}
-//End class behind class (override attributes)
-
 //white color
 .navigator-items-profile li a,
 .navigator-link-social li a,
 .navigator-copyright,
 .navigator-author {
-  color: $white-color;
+  @extend %text-color-white;
 }
 
 //light color
@@ -218,7 +175,7 @@ h1 {
 .goals-heading-des,
 .contact-heading-des,
 .technicalSkills-heading-des {
-  color: $text-light-color;
+  @extend %text-color-light;
 }
 
 //start css same between tag
@@ -250,32 +207,53 @@ h1 {
 .projects-heading-text::after,
 .goals-heading-text::after,
 .contact-heading-text::after {
-  border-bottom: 1px solid $primary-color;
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  transform: translate(50%, 50%);
+  @extend %border-title;
 }
 //end css same between tag
 
 //start css same between section
 section {
   //section: about skills project goals contact
-  background-color: $white-color;
+  @extend %sections-style;
   border-bottom: 2px solid $primary-color;
-  border-radius: 5px;
 }
 //end css same between section
 
 //Start css same between heading h3 tag
 .technicalSkills-heading-text,
 .softSkills-heading-text {
-  display: inline-block;
-  background-color: $primary-color;
-  color: $white-color;
-  box-shadow: -2px 4px 4px $text-light-color;
+  @extend %text-border-primary;
 }
 //End css same between heading h3 tag
+
+.text-shadow {
+  @extend %text-shadow;
+}
+
+.column-padding0 {
+  @extend %column-padding0;
+}
+
+.column-pl0 {
+  @extend %column-pl0;
+}
+
+.column-pr0 {
+  @extend %column-pr0;
+}
+
+.pos-relative {
+  @extend %pos-relative;
+}
+
+.pos-absolute {
+  @extend %pos-absolute;
+}
+
+.bold-text {
+  @extend %bold-text;
+}
+
+.textColor {
+  @extend %text-color-primary;
+}

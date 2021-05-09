@@ -1,0 +1,76 @@
+%outline-btn {
+  background-color: $white-color;
+  color: $primary-color;
+  font-weight: 700;
+  border-radius: 0;
+  transition: 0.5s ease;
+  border: 1px solid $primary-color;
+}
+
+%border-title {
+  border-bottom: 1px solid $primary-color;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+}
+
+%sections-style {
+  background-color: $white-color;
+  border-bottom: 2px solid $primary-color;
+  border-radius: 5px;
+}
+
+%text-color-light {
+  color: $text-light-color;
+}
+%text-color-black {
+  color: $text-black-color;
+}
+%text-color-white {
+  color: $white-color;
+}
+
+%text-color-primary {
+  color: $primary-color;
+}
+
+%text-border-primary {
+  display: inline-block;
+  background-color: $primary-color;
+  color: $white-color;
+  box-shadow: -2px 4px 4px $text-light-color;
+}
+
+//start class behind class (override attributes)
+%text-shadow {
+  text-shadow: -2px 4px 4px $text-light-color;
+}
+
+%column-padding0 {
+  padding: 0;
+}
+
+%column-pl0 {
+  padding-left: 0;
+}
+
+%column-pr0 {
+  padding-right: 0;
+}
+
+%pos-relative {
+  position: relative;
+}
+
+%pos-absolute {
+  position: absolute;
+}
+
+%bold-text {
+  font-weight: 700;
+}
+//End class behind class (override attributes)
