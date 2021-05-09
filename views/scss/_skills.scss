@@ -4,15 +4,17 @@
   .skill-content {
     @include flex(row, center, flex-start, wrap);
     &-icon {
-      @include flex(column, center, center, wrap);
+      @include flex(column, center, center, nowrap);
       position: absolute;
       top: 0;
       background-color: transparent;
       & i {
         font-size: 2.5rem;
-        background: -webkit-linear-gradient(rgba(88, 88, 88), rgb(88, 88, 88));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $text-black-color;
+      }
+      .fa-react,
+      .fa-think-peaks {
+        font-weight: bold;
       }
     }
     &-text {
