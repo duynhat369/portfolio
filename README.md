@@ -12,4 +12,4 @@
 
 ### 8. Delete class name invalid
 
-### NOTE: Mixin for same classes
+### NOTE: Mixin for same classes, use extend => remove reset css
