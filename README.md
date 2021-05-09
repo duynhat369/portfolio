@@ -11,3 +11,5 @@
 ### 6. Github domain or vercel domain
 
 ### 8. Delete class name invalid
+
+### NOTE: Mixin for same classes
