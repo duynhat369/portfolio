@@ -1,97 +1,36 @@
 //Start skills css
 .skills {
+  //hard skills, soft skills
   .skill-content {
-    @include flex(column, center, flex-start, wrap);
-
-    text-align: center;
+    @include flex(row, center, flex-start, wrap);
     &-icon {
       @include flex(column, center, center, wrap);
-      background-color: $white-color;
-      box-shadow: 2px 2px 40px $shadow-color;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      background-color: transparent;
       & i {
         font-size: 2.5rem;
+        background: -webkit-linear-gradient(rgba(88, 88, 88), rgb(88, 88, 88));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
-    &-text-heading {
-      color: $text-black-color;
-    }
-    &-text-des {
-      width: 100%;
-      color: $text-light-color;
-      .list-skill {
-        list-style-type: circle;
-        text-align: left;
-      }
-    }
-  }
+    &-text {
+      width: 70%;
+      margin-left: auto;
 
-  .html5-icon i {
-    background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), rgb(255, 51, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .javascript i {
-    background: -webkit-linear-gradient(
-      rgba(255, 218, 9, 0.1),
-      rgb(255, 218, 9)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .react i {
-    background: -webkit-linear-gradient(
-      rgba(0, 247, 255, 0.1),
-      rgb(0, 247, 255)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .bootstrap4 i {
-    background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), rgb(255, 51, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .github i {
-    background: -webkit-linear-gradient(
-      rgba(204, 0, 255, 0.1),
-      rgb(204, 0, 255)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .text-editor i {
-    background: -webkit-linear-gradient(rgba(20, 245, 0, 0.1), rgb(20, 245, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .foreign-language i {
-    background: -webkit-linear-gradient(
-      rgba(0, 247, 255, 0.1),
-      rgb(0, 247, 255)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .teamwork i {
-    background: -webkit-linear-gradient(rgba(255, 51, 0, 0.1), rgb(255, 51, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .design-thinking i {
-    background: -webkit-linear-gradient(
-      rgba(255, 218, 9, 0.1),
-      rgb(255, 218, 9)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .sports i {
-    background: -webkit-linear-gradient(rgba(20, 245, 0, 0.1), rgb(20, 245, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      &-heading {
+        color: $text-black-color;
+      }
+      &-des {
+        width: 100%;
+        color: $text-light-color;
+        .list-skill {
+          list-style-type: circle;
+          text-align: left;
+        }
+      }
+    }
   }
 }
 //End skills css
