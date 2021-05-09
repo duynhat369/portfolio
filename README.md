@@ -8,7 +8,7 @@
 
 ### 5. Check UI UX last time
 
-### 6. Github domain or Vercel domain
+### 6. Github domain or vercels domain
 
 ### 8. Delete class name invalid
 
