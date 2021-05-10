@@ -3,14 +3,16 @@
   &-info {
     &-list {
       @include flex(column, start, center, nowrap);
+      @extend %text-color-light;
       li {
         @include flex(row, center, flex-start, nowrap);
         width: 100%;
         height: 100%;
         position: relative;
-        img {
-          width: 20px;
-          height: 20px;
+        i {
+          width: 30px;
+          font-size: 1.2rem;
+          color: $text-light-color;
         }
       }
     }
@@ -53,8 +55,8 @@
     }
   }
 
-  &-maps{
-    .address-google{
+  &-maps {
+    .address-google {
       border: 2px solid $primary-color;
       border-radius: 5px;
     }

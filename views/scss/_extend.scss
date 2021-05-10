@@ -50,6 +50,10 @@
   text-shadow: -2px 4px 4px $text-light-color;
 }
 
+%box-shadow {
+  box-shadow: 0 -1px 10px 4px $shadow-color;
+}
+
 %column-padding0 {
   padding: 0;
 }

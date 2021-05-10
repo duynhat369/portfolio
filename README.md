@@ -1,4 +1,4 @@
-### 1. Complete English content
+### 1. Complete English content: -- OK
 
 ### 2. Complete responsive navbar: 
   ### Scrolling pages are not allowed when the burger is active

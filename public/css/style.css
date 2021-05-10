@@ -29,7 +29,7 @@ section {
   border-radius: 5px;
 }
 
-.about-heading-des,
+.contact-info-list, .about-heading-des,
 .about-content-text__heading,
 .about-content-text__des,
 .skills-heading-des,
@@ -61,6 +61,10 @@ section {
 
 .text-shadow {
   text-shadow: -2px 4px 4px #686868;
+}
+
+.goals .item3, .goals .item2, .goals .item1, .box-shadow {
+  box-shadow: 0 -1px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .column-padding0 {
@@ -615,22 +619,13 @@ section {
 .goals .goals-item .goal-content .des3::after {
   border: 2px solid rgba(224, 199, 139, 0.2);
 }
-.goals .item1 {
-  box-shadow: 0 -1px 10px 4px rgba(204, 99, 91, 0.2);
-}
 .goals .item1::before {
   content: "01";
   background-color: #cc635b;
 }
-.goals .item2 {
-  box-shadow: 0 -1px 10px 4px rgba(174, 199, 133, 0.2);
-}
 .goals .item2::before {
   content: "02";
   background-color: #aec785;
-}
-.goals .item3 {
-  box-shadow: 0 -1px 10px 4px rgba(224, 199, 139, 0.2);
 }
 .goals .item3::before {
   content: "03";
@@ -654,9 +649,10 @@ section {
   height: 100%;
   position: relative;
 }
-.contact-info-list li img {
-  width: 20px;
-  height: 20px;
+.contact-info-list li i {
+  width: 30px;
+  font-size: 1.2rem;
+  color: #686868;
 }
 .contact-social-items {
   display: flex;

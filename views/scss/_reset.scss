@@ -230,6 +230,10 @@ section {
   @extend %text-shadow;
 }
 
+.box-shadow{
+  @extend %box-shadow;
+}
+
 .column-padding0 {
   @extend %column-padding0;
 }

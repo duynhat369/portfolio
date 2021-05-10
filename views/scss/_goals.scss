@@ -51,7 +51,7 @@
   }
 
   .item1 {
-    box-shadow: 0 -1px 10px 4px $primary-opacity;
+    @extend %box-shadow;
     &::before {
       content: "01";
       background-color: $primary-color;
@@ -59,7 +59,7 @@
   }
 
   .item2 {
-    box-shadow: 0 -1px 10px 4px $softSKills-opacity;
+    @extend %box-shadow;
     &::before {
       content: "02";
       background-color: $softSKills;
@@ -67,7 +67,7 @@
   }
 
   .item3 {
-    box-shadow: 0 -1px 10px 4px $technicalSkills-opacity;
+    @extend %box-shadow;
     &::before {
       content: "03";
       background-color: $technicalSkills;
