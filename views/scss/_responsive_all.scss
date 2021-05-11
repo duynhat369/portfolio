@@ -1,4 +1,5 @@
-@media (max-width: 1199.98px) {
+// width <1200px tablet, mobile, iPad pro, low pc solution
+@media (max-width: 1199px) {
   .page {
     .navigator {
       display: none;
@@ -19,6 +20,7 @@
   }
 }
 
+// width >=1200px PC
 @media (min-width: 1200px) {
   .navigator-mobile {
     display: none;
