@@ -230,7 +230,7 @@ section {
   @extend %text-shadow;
 }
 
-.box-shadow{
+.box-shadow {
   @extend %box-shadow;
 }
 
@@ -260,4 +260,35 @@ section {
 
 .textColor {
   @extend %text-color-primary;
+}
+
+.my5-px5-pb5 {
+  @extend %my5-px5-pb5;
+}
+
+.px4 {
+  @extend %px4;
+}
+
+.py5 {
+  @extend %py5;
+}
+
+.p5 {
+  @extend %p5;
+}
+
+.my5-p5 {
+  @extend %my5-p5;
+}
+
+.my5 {
+  @extend %my5;
+}
+.my3 {
+  @extend %my3;
+}
+
+.my2-py2 {
+  @extend %my2-py2;
 }

@@ -11,22 +11,37 @@
   flex-wrap: $wrap;
 }
 
-$grid-breakpoints: (
-  // Extra small screen / phone
-  xs: 0,
-  // Small screen / phone
-  sm: 576px,
-  // Medium screen / tablet
-  md: 768px,
-  // Large screen / desktop
-  lg: 992px,
-  // Extra large screen / wide desktop
-  xl: 1200px
-);
+@mixin py5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-);
+@mixin px4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@mixin py4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@mixin px3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@mixin py3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@mixin p3 {
+  @include py3;
+  @include px3;
+}
+
+@mixin py5-px4 {
+  @include py5;
+  @include px4;
+}

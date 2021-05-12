@@ -44,6 +44,57 @@
   color: $white-color;
   box-shadow: -2px 4px 4px $text-light-color;
 }
+//margin padding
+%my5-px5-pb5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+%my5-p5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+}
+
+%my2-py2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+%my3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+%bold-text {
+  font-weight: 700;
+}
+
+%px4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+%py5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+%my5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+%p5 {
+  padding: 3rem;
+}
+
+//end margin padding
 
 //start class behind class (override attributes)
 %text-shadow {
@@ -72,9 +123,5 @@
 
 %pos-absolute {
   position: absolute;
-}
-
-%bold-text {
-  font-weight: 700;
 }
 //End class behind class (override attributes)

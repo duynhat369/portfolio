@@ -59,6 +59,55 @@ section {
   box-shadow: -2px 4px 4px #686868;
 }
 
+.my5-px5-pb5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.my5-p5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+}
+
+.my2-py2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.my3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bold-text, h3, h1 {
+  font-weight: 700;
+}
+
+.px4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.my5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.p5 {
+  padding: 3rem;
+}
+
 .text-shadow {
   text-shadow: -2px 4px 4px #686868;
 }
@@ -85,10 +134,6 @@ section {
 
 .pos-absolute {
   position: absolute;
-}
-
-.bold-text, h3, h1 {
-  font-weight: 700;
 }
 
 html,
@@ -596,6 +641,7 @@ section {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
 }
 .skills .skill-content-icon {
   display: flex;
@@ -627,8 +673,8 @@ section {
   color: #686868;
 }
 .skills .skill-content-text-des .list-skill {
+  padding-left: 1rem;
   list-style-type: circle;
-  text-align: left;
 }
 
 .projects .projects-slide-title {
@@ -760,7 +806,7 @@ section {
   border-radius: 5px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199.98px) {
   .page .navigator {
     display: none;
   }
@@ -786,14 +832,29 @@ section {
     display: none;
   }
 }
-@media (min-width: 992px) and (max-width: 1023px) {
+@media (max-width: 575.98px) {
+  .page .container .row > .px4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  /*992px - 1199px*/
+  .skills .skill-content-text {
+    width: 80%;
+  }
+}
+@media (max-width: 991.98px) {
+  .about > .my5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .about-summary {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-bottom: 3rem;
   }
   .about-summary-image {
     position: relative;
@@ -804,6 +865,108 @@ section {
     width: 100%;
     margin: 0;
     top: 0;
+  }
+
+  .skills .my5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .skills .skill-content {
+    margin-bottom: 3rem;
+  }
+  .skills .skill-content-icon {
+    position: relative;
+    width: 100%;
+  }
+  .skills .skill-content-text {
+    width: 100%;
+  }
+  .skills .skill-content-text-heading {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .about-summary {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .about-summary-image {
+    display: none;
+  }
+  .about-summary .about-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+  .about-summary .about-content-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .about-summary .about-content-text__button .outline-btn {
+    width: 100%;
+  }
+  .about-summary .about-content-text__button .outline-btn::before {
+    left: 100px;
+  }
+  .about-summary .about-content-text__button .outline-btn::after {
+    left: 100px;
+  }
+
+  .skills {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+  }
+  .skills .skill-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .skills .skill-content-icon {
+    position: absolute;
+    top: 0;
+    width: auto;
+  }
+  .skills .skill-content-text {
+    width: 85%;
+  }
+  .skills .skill-content-text-heading {
+    text-align: left;
+  }
+}
+@media (max-width: 575.98px) {
+  .about-summary .about-content-text__button .outline-btn::before {
+    left: 60px;
+  }
+  .about-summary .about-content-text__button .outline-btn::after {
+    left: 60px;
+  }
+
+  .skills .skill-content {
+    margin-bottom: 3rem;
+  }
+  .skills .skill-content-icon {
+    position: relative;
+    width: 100%;
+  }
+  .skills .skill-content-text {
+    width: 100%;
+  }
+  .skills .skill-content-text-heading {
+    text-align: center;
+  }
+  .skills .technicalSkills-heading,
+.skills .softSkills-heading {
+    text-align: center;
   }
 }
 

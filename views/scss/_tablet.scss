@@ -1,23 +1,34 @@
-//iPad Pro, low pc solution
-@media (min-width: 1024px) and (max-width: 1199px) {
-  //css for iPad Pro, low pc solution here
+// *********** iPad Pro, low pc solution, .col-lg ***********
+@media (max-width: 1199.98px) {
+  /*992px - 1199px*/
+  .skills {
+    .skill-content {
+      &-text {
+        width: 80%;
+      }
+    }
+  }
 }
 //End iPad pro, low pc solution
 
-//Tablet, md
-@media (min-width: 992px) and (max-width: 1023px) {
+//*********** Tablet, .col-md ***********
+@media (max-width: 991.98px) {
+  //768px - 991px
   // about component
   .about {
+    & > .my5 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     &-summary {
       @include flex(column);
-      margin-bottom: 3rem;
       &-image {
         position: relative;
         width: 100%;
         height: 600px;
       }
 
-      .about-content{
+      .about-content {
         width: 100%;
         margin: 0;
         top: 0;
@@ -25,5 +36,27 @@
     }
   }
   // End about
+
+  // SKills component
+  .skills {
+    .my5 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .skill-content {
+      margin-bottom: 3rem;
+      &-icon {
+        position: relative;
+        width: 100%;
+      }
+      &-text {
+        width: 100%;
+        &-heading {
+          text-align: center;
+        }
+      }
+    }
+  }
+  // End SKills
 }
 //End Tablet, md

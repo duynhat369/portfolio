@@ -1,5 +1,5 @@
 // width <1200px tablet, mobile, iPad pro, low pc solution
-@media (max-width: 1199px) {
+@media (max-width: 1199.98px) {
   .page {
     .navigator {
       display: none;
@@ -28,5 +28,16 @@
 
   .overlay {
     display: none;
+  }
+}
+
+// remove gutters on container
+@media (max-width: 575.98px) {
+  .page {
+    .container {
+      .row > .px4 {
+        @include px3;
+      }
+    }
   }
 }

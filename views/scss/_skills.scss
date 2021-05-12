@@ -3,6 +3,7 @@
   //hard skills, soft skills
   .skill-content {
     @include flex(row, center, flex-start, wrap);
+    position: relative;
     &-icon {
       @include flex(column, center, center, nowrap);
       position: absolute;
@@ -28,8 +29,8 @@
         width: 100%;
         color: $text-light-color;
         .list-skill {
+          padding-left: 1rem;
           list-style-type: circle;
-          text-align: left;
         }
       }
     }

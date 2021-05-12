@@ -1,1 +1,106 @@
-// width < 740px
+//*********** mobile, .col-sm ***********
+@media (max-width: 767.98px) {
+  //576px - 767px
+  // about component
+  .about {
+    @include px3;
+    &-summary {
+      @include flex(column);
+      &-image {
+        display: none;
+      }
+
+      .about-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: 0;
+
+        &-text {
+          @include p3;
+          &__button {
+            .outline-btn {
+              width: 100%;
+              &::before {
+                left: 100px;
+              }
+              &::after {
+                left: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // End about
+
+  //skills
+  .skills {
+    @include px3;
+    padding-bottom: 0;
+    .skill-content {
+      @include px3;
+      &-icon {
+        position: absolute;
+        top: 0;
+        width: auto;
+      }
+      &-text {
+        width: 85%;
+        &-heading {
+          text-align: left;
+        }
+      }
+    }
+  }
+  //End skills
+}
+//End Mobile, col sm
+
+//*********** low mobile solution, .col- ***********
+@media (max-width: 575.98px) {
+  // about component
+  .about {
+    &-summary {
+      .about-content {
+        &-text {
+          &__button {
+            .outline-btn {
+              &::before {
+                left: 60px;
+              }
+              &::after {
+                left: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // End about
+
+  //skills
+  .skills {
+    .skill-content {
+      margin-bottom: 3rem;
+      &-icon {
+        position: relative;
+        width: 100%;
+      }
+      &-text {
+        width: 100%;
+        &-heading {
+          text-align: center;
+        }
+      }
+    }
+
+    .technicalSkills-heading,
+    .softSkills-heading {
+      text-align: center;
+    }
+  }
+  //End skills
+}
