@@ -45,3 +45,16 @@
   @include py5;
   @include px4;
 }
+
+@mixin mb5 {
+  margin-bottom: 3rem;
+}
+
+@mixin mt5 {
+  margin-top: 3rem;
+}
+
+@mixin mb5-mt5 {
+  @include mb5;
+  @include mt5;
+}

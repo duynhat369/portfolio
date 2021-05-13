@@ -83,8 +83,11 @@
 
   //skills
   .skills {
+    padding-bottom: 3rem;
     .skill-content {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
+      padding-left: 0;
+      padding-right: 0;
       &-icon {
         position: relative;
         width: 100%;
@@ -99,6 +102,10 @@
 
     .technicalSkills-heading,
     .softSkills-heading {
+      text-align: center;
+    }
+
+    .softSkill__des {
       text-align: center;
     }
   }

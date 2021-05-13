@@ -951,8 +951,13 @@ section {
     left: 60px;
   }
 
+  .skills {
+    padding-bottom: 3rem;
+  }
   .skills .skill-content {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   .skills .skill-content-icon {
     position: relative;
@@ -966,6 +971,9 @@ section {
   }
   .skills .technicalSkills-heading,
 .skills .softSkills-heading {
+    text-align: center;
+  }
+  .skills .softSkill__des {
     text-align: center;
   }
 }
