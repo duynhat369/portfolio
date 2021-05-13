@@ -56,6 +56,12 @@
   }
   //End skills
 
+  //projects
+  .projects {
+    @include px3;
+  }
+  //End projects
+
   //career goals
   .goals {
     @include px3;
@@ -69,6 +75,17 @@
     }
   }
   //End Goals
+
+  //Contact
+  .contact {
+    @include px3;
+
+    &-maps {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  //End contact
 }
 //End Mobile, col sm
 
@@ -138,9 +155,17 @@
         &::before {
           display: none;
         }
+        .goal-index {
+          display: block;
+        }
       }
     }
   }
   //End Goals
+
+  //Contact
+  .contact {
+  }
+  //End contact
 }
 //End low mobile, iPhone 6/7/8plus

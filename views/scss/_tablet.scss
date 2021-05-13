@@ -58,6 +58,15 @@
     }
   }
   // End SKills
+ 
+  //projects
+  .projects {
+    .my5 {
+      margin-bottom: 0;
+      @include mt2-pt2;
+    }
+  }
+  //End projects
 
   //Goals
   .goals {
@@ -67,5 +76,14 @@
     }
   }
   //End Goals
+ 
+  //Contact
+  .contact {
+    .my5 {
+      margin-bottom: 0;
+      @include mt2-pt2;
+    }
+  }
+  //End Contact
 }
 //End Tablet, iPad normal ,md

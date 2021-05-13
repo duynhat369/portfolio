@@ -389,9 +389,14 @@ section {
 .nav-mobile-checkbox:checked ~ .navigator-mobile {
   transform: translateX(0%);
 }
+.nav-mobile-checkbox:checked ~ .navigator-mobile .icon-close {
+  cursor: pointer;
+}
 
 .nav-mobile-checkbox:checked ~ .overlay {
   display: block;
+  user-select: none;
+  cursor: pointer;
 }
 
 .navigator-mobile {
@@ -746,13 +751,6 @@ section {
   background-color: #e0c78b;
 }
 
-.contact-info-list {
-  display: flex;
-  flex-flow: column;
-  align-items: start;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
 .contact-info-list li {
   display: flex;
   flex-flow: row;
@@ -894,7 +892,19 @@ section {
     text-align: center;
   }
 
+  .projects .my5 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
   .goals .my5 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .contact .my5 {
     margin-bottom: 0;
     margin-top: 0.5rem;
     padding-top: 0.5rem;
@@ -958,12 +968,26 @@ section {
     text-align: left;
   }
 
+  .projects {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .goals {
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .goals .goals-item .goal-content .goal-index {
     display: none;
+  }
+
+  .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contact-maps {
+    padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 575.98px) {
@@ -1012,6 +1036,9 @@ section {
   }
   .goals .goals-item .goal-content::before {
     display: none;
+  }
+  .goals .goals-item .goal-content .goal-index {
+    display: block;
   }
 }
 

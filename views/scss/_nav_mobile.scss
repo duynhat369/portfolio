@@ -1,8 +1,13 @@
 .nav-mobile-checkbox:checked ~ .navigator-mobile {
   transform: translateX(0%);
+  .icon-close {
+    cursor: pointer;
+  }
 }
 .nav-mobile-checkbox:checked ~ .overlay {
   display: block;
+  user-select: none;
+  cursor: pointer;
 }
 .navigator-mobile {
   position: fixed;

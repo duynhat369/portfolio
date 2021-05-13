@@ -6,7 +6,7 @@
 
 ### => Zoom the screen in and out, then remove the active burger
 
-### 3. Responsive for all sections (done: about, skills)
+### 3. Responsive for all sections -- OK (add project late)
 
 ### 5. Check UI UX last time
 

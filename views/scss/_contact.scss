@@ -2,7 +2,6 @@
 .contact {
   &-info {
     &-list {
-      @include flex(column, start, center, nowrap);
       @extend %text-color-light;
       li {
         @include flex(row, center, flex-start, nowrap);
