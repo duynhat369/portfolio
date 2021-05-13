@@ -270,6 +270,10 @@ section {
   @extend %px4;
 }
 
+.p4 {
+  @extend %p4;
+}
+
 .py5 {
   @extend %py5;
 }
@@ -280,6 +284,10 @@ section {
 
 .my5-p5 {
   @extend %my5-p5;
+}
+
+.mb5 {
+  @extend %mb5;
 }
 
 .my5 {

@@ -17,7 +17,7 @@
   // about component
   .about {
     & > .my5 {
-      margin-top: 0;
+      @include mt2-pt2;
       margin-bottom: 0;
     }
     &-summary {
@@ -58,5 +58,14 @@
     }
   }
   // End SKills
+
+  //Goals
+  .goals {
+    .my5 {
+      margin-bottom: 0;
+      @include mt2-pt2;
+    }
+  }
+  //End Goals
 }
-//End Tablet, md
+//End Tablet, iPad normal ,md

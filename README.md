@@ -1,10 +1,12 @@
 ### 1. Complete English content: -- OK
 
-### 2. Complete responsive navbar: 
-  ### Scrolling pages are not allowed when the burger is active
-  ### Zoom the screen in and out, then remove the active burger
+### 2. Complete responsive navbar:
 
-### 3. Responsive for all sections
+### => Scrolling pages are not allowed when the burger is active
+
+### => Zoom the screen in and out, then remove the active burger
+
+### 3. Responsive for all sections (done: about, skills)
 
 ### 5. Check UI UX last time
 

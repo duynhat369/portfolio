@@ -55,6 +55,20 @@
     }
   }
   //End skills
+
+  //career goals
+  .goals {
+    @include px3;
+
+    .goals-item {
+      .goal-content {
+        .goal-index {
+          display: none;
+        }
+      }
+    }
+  }
+  //End Goals
 }
 //End Mobile, col sm
 
@@ -110,4 +124,23 @@
     }
   }
   //End skills
+
+  //career goals
+  .goals {
+    .goals-item {
+      .item3 {
+        margin-bottom: 0;
+      }
+      width: 100%;
+      .goal-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  //End Goals
 }
+//End low mobile, iPhone 6/7/8plus

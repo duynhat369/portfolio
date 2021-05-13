@@ -94,6 +94,10 @@ section {
   padding-right: 1.5rem;
 }
 
+.p4 {
+  padding: 1.5rem;
+}
+
 .py5 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -101,6 +105,10 @@ section {
 
 .my5 {
   margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mb5 {
   margin-bottom: 3rem;
 }
 
@@ -846,7 +854,8 @@ section {
 }
 @media (max-width: 991.98px) {
   .about > .my5 {
-    margin-top: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
     margin-bottom: 0;
   }
   .about-summary {
@@ -883,6 +892,12 @@ section {
   }
   .skills .skill-content-text-heading {
     text-align: center;
+  }
+
+  .goals .my5 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -942,6 +957,14 @@ section {
   .skills .skill-content-text-heading {
     text-align: left;
   }
+
+  .goals {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .goals .goals-item .goal-content .goal-index {
+    display: none;
+  }
 }
 @media (max-width: 575.98px) {
   .about-summary .about-content-text__button .outline-btn::before {
@@ -975,6 +998,20 @@ section {
   }
   .skills .softSkill__des {
     text-align: center;
+  }
+
+  .goals .goals-item {
+    width: 100%;
+  }
+  .goals .goals-item .item3 {
+    margin-bottom: 0;
+  }
+  .goals .goals-item .goal-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .goals .goals-item .goal-content::before {
+    display: none;
   }
 }
 

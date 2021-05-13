@@ -53,8 +53,20 @@
 @mixin mt5 {
   margin-top: 3rem;
 }
+@mixin mt2 {
+  margin-top: 0.5rem;
+}
+
+@mixin pt2 {
+  padding-top: 0.5rem;
+}
 
 @mixin mb5-mt5 {
   @include mb5;
   @include mt5;
+}
+
+@mixin mt2-pt2 {
+  @include mt2;
+  @include pt2;
 }
