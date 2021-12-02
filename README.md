@@ -8,6 +8,8 @@
 
 ### 3. Responsive for all sections -- OK (add project late)
 
+### 4.  Preloader
+
 ### 5. Check UI UX last time
 
 ### 6. Github domain or vercels domain
