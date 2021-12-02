@@ -1,8 +1,19 @@
 //Projects start
 .projects {
   .projects-slide {
-    &-title {
-      color: $white-color;
+    &-caption {
+      background-color: $background-color;
+      color: $primary-color;
+    }
+  }
+
+  .carousel {
+    .carousel-control-button {
+      background-color: $primary-color;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
     }
   }
 }
